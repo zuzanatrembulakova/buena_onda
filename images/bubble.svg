@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg enable-background="new 0 0 37.35 37.35" version="1.1" viewBox="0 0 37.35 37.35" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<symbol id="e" viewBox="0.425 -17.957 28.732 17.957">
+		<path d="m29 0c0.333-1.9 0.133-4.033-0.6-6.4-1.433-4.7-4.783-8.167-10.05-10.4-3.967-1.667-8.217-1.534-12.75 0.4-2.056 0.907-3.78 1.932-5.175 3.075 1.039-0.796 2.447-1.471 4.225-2.025 4.033-1.233 8.434-0.983 13.2 0.75 4.3 1.533 7.45 4.434 9.45 8.7 1 2.1 1.567 4.067 1.7 5.9z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+</symbol>
+<symbol id="f" viewBox="0 -37.35 37.35 37.35">
+		<path d="m37.1-18.7c0-5.066-1.8-9.4-5.4-13s-7.95-5.4-13.05-5.4c-5.066 0-9.4 1.8-13 5.4s-5.4 7.934-5.4 13c0 5.1 1.8 9.45 5.4 13.05s7.934 5.4 13 5.4c5.1 0 9.45-1.8 13.05-5.4s5.4-7.95 5.4-13.05z" clip-rule="evenodd" fill="none" stroke="#fff" stroke-width=".5"/>
+</symbol>
+<radialGradient id="d" cx="25.81" cy=".1416" r="15.38" gradientTransform="matrix(.7071 .7071 .7071 -.7071 -.2002 .1999)" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#E8F4F7" offset="0"/>
+	<stop stop-color="#E6F3F6" offset=".4627"/>
+	<stop stop-color="#DEEFF3" offset=".7137"/>
+	<stop stop-color="#D0E8EE" offset=".9098"/>
+	<stop stop-color="#C7E4EB" offset="1"/>
+</radialGradient>
+<path d="m37.1 18.7c0 5.066-1.8 9.399-5.399 13-3.601 3.6-7.951 5.4-13.051 5.4-5.067 0-9.4-1.8-13-5.399-3.6-3.601-5.4-7.934-5.4-13 0-5.1 1.8-9.45 5.4-13.05s7.934-5.4 13-5.4c5.1 0 9.449 1.8 13.05 5.4 3.6 3.599 5.4 7.949 5.4 13.049z" clip-rule="evenodd" fill="url(#d)" fill-rule="evenodd"/>
+<use transform="scale(1 -1)" y="-37.35" width="37.35" height="37.35" enable-background="new" opacity=".6719" xlink:href="#f"/>
+<path d="m9.05 6.9c2.467 0.067 2.784 1.25 0.95 3.55-1.933 2.433-3.267 3.25-4 2.45-0.667-0.7-0.617-1.867 0.15-3.5 0.767-1.7 1.733-2.533 2.9-2.5z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+<path d="m5.05 14.7c0.633 0.133 0.833 0.6 0.6 1.4-0.233 0.833-0.583 1.1-1.05 0.8-0.4-0.3-0.533-0.767-0.4-1.4 0.167-0.6 0.45-0.867 0.85-0.8z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+<use transform="matrix(1 0 0 -1 5.6001 16.35)" x="0.425" y="-17.957" width="28.732" height="17.957" enable-background="new" opacity=".3398" xlink:href="#e"/>
+</svg>

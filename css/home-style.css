@@ -1,0 +1,20 @@
+#preload{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #6da7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: preloadFadeOut 1s ease 4s;
+}
+@keyframes preloadFadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}

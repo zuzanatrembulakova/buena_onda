@@ -4,25 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home-style.css">
+    <link rel="stylesheet" href="css/products-style.css">
     <title></title>
 </head>
 
 <body>
-
-    <div id="preload">
-        <img>
-        <h3>preloader</h3>
-        <div></div>
-    </div>
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="icons/logo.svg" alt="top"></button>
 
     <nav id="navbar">
         <div class="menu_items_wrapper">
             <a href='#' class="menu_item">page</a>
-            <a href="../index.html" class="logo_link"><div class="nav_icon logo"></div></a>
-            <a href='products.html' class="menu_item">products</a>
+            <a href="../index.html?page_type=nologo" class="logo_link">
+                <div class="nav_icon logo"></div>
+            </a>
+            <a href='products.html' class="menu_item menu_selected">products</a>
         </div>
     </nav>
 
@@ -47,31 +43,26 @@
     </nav>
 
     <main>
+        <div class="product_wrapper" id="product_offset_270">
+            <img src="images/buenaonda_summer21_BeachBag_front.jpg">
+        </div>
 
-        <div class="bubbles_wrapper">
-            <div class="bubbles">
-                <img src="images/bubble.svg" class="bubble_img">
-                <img src="images/bubble.svg" class="bubble_img">
-                <img src="images/bubble.svg" class="bubble_img">
-            </div>
+        <div class="product_wrapper" id="product_offset_180">
+            <img src="images/buenaonda_summer21_Pants_front.jpg">
+        </div>
+
+        <div class="product_wrapper" id="product_offset_090">
+            <img src="images/BUENA-ONDA-Paradise-Chill-Outs-Front.jpg">
+        </div>
+
+        <div class="product_wrapper" id="product_offset_000">
+            <img src="images/BUENA-ONDA-Koketsu-Dress-Front.jpg">
+            <p>Ja som obrazok posledny</p>
         </div>
 
     </main>
 
 
     <script src="script.js"></script>
-    <script src="script/home-script.js"></script>
-    <script type="text/javascript">
-
-        /*$(document).on('ready', function() {
-            $('.nav_icon').bind({
-                mouseenter: function(e) {
-                    $(this).removeClass('icon_out').addClass("icon_in");
-                },
-                mouseleave: function(e) {
-                    $(this).removeClass('icon_in').addClass("icon_out");
-                }
-            });
-        })*/
-    </script>
+    <script src="script/products-script.js"></script>
 </body></html>
