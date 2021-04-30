@@ -1,0 +1,3 @@
+jquery ripple effect
+
+https://github.com/sirxemic/jquery.ripples

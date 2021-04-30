@@ -12,3 +12,5 @@ if (page_type != null && page_type == "nologo") {
         logo.style.display = "none";
     }, 5000);
 }
+
+

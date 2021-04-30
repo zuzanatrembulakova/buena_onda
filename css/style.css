@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     background-color: #f5f5f5;
-    font-family: 'Arial'
+    font-family: 'Century Gothic';
 }
 
 * {
@@ -88,7 +88,6 @@ html {
     text-decoration: none;
     color: #000000;
     font-size: 18px;
-    font-weight: bold;
     transition: .3s ease;
 }
 .menu_item:hover,
