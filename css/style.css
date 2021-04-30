@@ -152,6 +152,7 @@ html {
     }
 }
 
+
 @media screen and (max-width: 1025px) {
 
     /*Navigation bar*/
@@ -328,3 +329,5 @@ html {
         transform: translateY(-30%);
     }
 }
+
+

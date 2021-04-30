@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,11 @@
 <body>
 
     <div id="preload">
-        <img>
-        <h3>preloader</h3>
-        <div></div>
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="videos/buena-onda_preloader.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="icons/logo.svg" alt="top"></button>
@@ -21,7 +24,9 @@
     <nav id="navbar">
         <div class="menu_items_wrapper">
             <a href='#' class="menu_item">page</a>
-            <a href="../index.html" class="logo_link"><div class="nav_icon logo"></div></a>
+            <a href="../index.html" class="logo_link">
+                <div class="nav_icon logo"></div>
+            </a>
             <a href='products.html' class="menu_item">products</a>
         </div>
     </nav>
@@ -62,7 +67,6 @@
     <script src="script.js"></script>
     <script src="script/home-script.js"></script>
     <script type="text/javascript">
-
         /*$(document).on('ready', function() {
             $('.nav_icon').bind({
                 mouseenter: function(e) {
@@ -73,5 +77,8 @@
                 }
             });
         })*/
+
     </script>
-</body></html>
+</body>
+
+</html>
