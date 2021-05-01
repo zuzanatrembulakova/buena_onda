@@ -4,10 +4,10 @@ var currentSpeed = 0;
 /* Aktualna pozicia v rolovani vyjadrena v stupnoch */
 var currentAlpha = 0;
 /* Polomer kruhu po ktorom rotujem produkty */
-var radius = 500;
+var radius = viewport_height / 2;
 /* Scale Max a Min definuje maximalne zvacsenie a maximalne zmensenie */
-var scaleMaxFactor = 1.33;
-var scaleMinFactor = 0.33;
+var scaleMaxFactor = 1;
+var scaleMinFactor = 0.8;
 
 var moveAnimationIsRunning = false;
 
@@ -17,10 +17,10 @@ document.onkeydown = function (e) {
 
     switch (e.key) {
         case 'ArrowUp':
-			currentSpeed -= 2;
+			currentSpeed += 2;
             break;
         case 'ArrowDown':
-			currentSpeed += 2;
+			currentSpeed -= 2;
             break;
         case 'ArrowLeft':
             // left arrow
@@ -46,7 +46,7 @@ function moveScene(){
 
 	moveAnimationIsRunning = true;
 
-    currentAlpha += currentSpeed;
+    currentAlpha -= currentSpeed;
     if (currentAlpha > 360){
         currentAlpha -= 360;
     }
