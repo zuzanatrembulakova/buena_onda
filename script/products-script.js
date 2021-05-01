@@ -83,7 +83,7 @@ function place_product_div(item, angle){
 
     //console.log(angle, x, realScale);
     item.style.transform = "translateY(" + y + "px) scale(" + realScale + ")";
-    item.style.opacity = "" + opacity;
+    /*item.style.opacity = "" + opacity;*/
     item.style.zIndex = "" + Math.floor(x);
 }
 
