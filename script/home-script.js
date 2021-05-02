@@ -16,15 +16,29 @@ if (page_type != null && page_type == "nologo") {
 var mountainCurrentX = 0;
 var beachCurrentX = 0;
 var seaCurrentX = 0;
-var mountin = document.querySelector('.mountains2');
+var palmsBackCurrentX = 0;
+var palmsFrontCurrentX = 0;
+var seaFrontCurrentX = 0;
+
+var mountain = document.querySelector('.mountain_back');
+var mountainFront = document.querySelector('.mountain_front');
 var beach = document.querySelector('.beach');
-var sea = document.querySelector('.wave2');
+var palmsBack = document.querySelector('.palms_back');
+var palmsFront = document.querySelector('.palms_front');
+var seaFront = document.querySelector('.sea_front');
 
 window.addEventListener('wheel', function (e) {
 
     if (mountainCurrentX <= 0) {
         mountainCurrentX -= e.deltaY / 20;
-        mountin.style.transform = "translateY(" + mountainCurrentX + "px)";
+        mountain.style.transform = "translateY(" + mountainCurrentX + "px)";
+        if (mountainCurrentX > 0){
+            mountainCurrentX = 0;
+        }
+    }
+    if (mountainCurrentX <= 0) {
+        mountainCurrentX -= e.deltaY / 20;
+        mountainFront.style.transform = "translateY(" + mountainCurrentX + "px)";
         if (mountainCurrentX > 0){
             mountainCurrentX = 0;
         }
@@ -38,11 +52,27 @@ window.addEventListener('wheel', function (e) {
         }
     }
 
-    if (seaCurrentX <= 0) {
-        seaCurrentX -= e.deltaY / 40;
-        sea.style.transform = "translateY(" + seaCurrentX + "px)";
-        if (seaCurrentX > 0){
-            seaCurrentX = 0;
+    if (palmsBackCurrentX <= 0) {
+        palmsBackCurrentX -= e.deltaY / 40;
+        palmsBack.style.transform = "translateY(" + palmsBackCurrentX + "px)";
+        if (palmsBackCurrentX > 0){
+            palmsBackCurrentX = 0;
+        }
+    }
+
+    if (palmsFrontCurrentX <= 0) {
+        palmsFrontCurrentX -= e.deltaY / 50;
+        palmsFront.style.transform = "translateY(" + palmsFrontCurrentX + "px)";
+        if (palmsFrontCurrentX > 0){
+            palmsFrontCurrentX = 0;
+        }
+    }
+
+    if (seaFrontCurrentX <= 0) {
+        seaFrontCurrentX -= e.deltaY / 50;
+        seaFront.style.transform = "translateY(" + seaFrontCurrentX + "px)";
+        if (seaFrontCurrentX > 0){
+            seaFrontCurrentX = 0;
         }
     }
 
