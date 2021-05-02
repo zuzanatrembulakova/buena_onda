@@ -35,7 +35,7 @@ document.onkeydown = function (e) {
 
 window.addEventListener('wheel', function (e) {
 
-    currentSpeed += e.deltaY/100;
+    currentSpeed += e.deltaY/1000;
 	if (moveAnimationIsRunning == false){
 		moveScene();
 	}
@@ -75,15 +75,18 @@ function moveScene(){
 }
 
 function place_product_div(item, angle){
-    y = radius + radius * Math.sin(Math.PI * angle/180);
+    y = 100 + radius + radius * Math.sin(Math.PI * angle/180);
     x = (-1) * radius * Math.cos(Math.PI * angle/180);
 
-    var opacity = 0.2 + 0.8 * (x+500)/(2*radius);
+    var opacity = 1.0;
+    if (x < 0) {
+        opacity = 0.2 + 0.8 * (radius+x)/(radius);
+    }
 	var realScale = scaleMinFactor + scaleMaxFactor * ((x+500)/(2*radius));
 
     //console.log(angle, x, realScale);
     item.style.transform = "translateY(" + y + "px) scale(" + realScale + ")";
-    /*item.style.opacity = "" + opacity;*/
+    item.style.opacity = "" + opacity;
     item.style.zIndex = "" + Math.floor(x);
 }
 
