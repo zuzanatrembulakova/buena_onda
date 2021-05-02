@@ -26,7 +26,7 @@ h1{
     color: #ffffff;
 }
 
-.sun, .clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back ,.white_waves, .sea_front, .sea_wave{
+.sun, .clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back ,.white_waves, .sea_front{
     width: 100%;
     height: 700px;
     background-size: cover;
@@ -67,17 +67,17 @@ h1{
     background-image: url(../images/home-sea/sea_front-01.svg);
 }
 .sea_wave{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    margin: 0;
     background-image: url(../images/home-sea/sea_wave-01.svg);
-    position: fixed;
 }
 
-.above_sea{
-    height: 600px;
-}
 .under_sea{
     background-color: #3993FA;
     width: 100%;
-    height: 500px;
+    height: 1000px;
     padding-top: 50px;
 }
 

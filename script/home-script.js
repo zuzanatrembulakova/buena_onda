@@ -23,57 +23,19 @@ var seaFrontCurrentX = 0;
 var mountain = document.querySelector('.mountain_back');
 var mountainFront = document.querySelector('.mountain_front');
 var beach = document.querySelector('.beach');
+var seaBack = document.querySelector('.sea_back');
 var palmsBack = document.querySelector('.palms_back');
 var palmsFront = document.querySelector('.palms_front');
 var seaFront = document.querySelector('.sea_front');
 
-window.addEventListener('wheel', function (e) {
+document.addEventListener('scroll', function (e) {
+    var posY = window.scrollY;
 
-    if (mountainCurrentX <= 0) {
-        mountainCurrentX -= e.deltaY / 20;
-        mountain.style.transform = "translateY(" + mountainCurrentX + "px)";
-        if (mountainCurrentX > 0){
-            mountainCurrentX = 0;
-        }
-    }
-    if (mountainCurrentX <= 0) {
-        mountainCurrentX -= e.deltaY / 20;
-        mountainFront.style.transform = "translateY(" + mountainCurrentX + "px)";
-        if (mountainCurrentX > 0){
-            mountainCurrentX = 0;
-        }
-    }
-
-    if (beachCurrentX <= 0) {
-        beachCurrentX -= e.deltaY / 30;
-        beach.style.transform = "translateY(" + beachCurrentX + "px)";
-        if (beachCurrentX > 0){
-            beachCurrentX = 0;
-        }
-    }
-
-    if (palmsBackCurrentX <= 0) {
-        palmsBackCurrentX -= e.deltaY / 40;
-        palmsBack.style.transform = "translateY(" + palmsBackCurrentX + "px)";
-        if (palmsBackCurrentX > 0){
-            palmsBackCurrentX = 0;
-        }
-    }
-
-    if (palmsFrontCurrentX <= 0) {
-        palmsFrontCurrentX -= e.deltaY / 50;
-        palmsFront.style.transform = "translateY(" + palmsFrontCurrentX + "px)";
-        if (palmsFrontCurrentX > 0){
-            palmsFrontCurrentX = 0;
-        }
-    }
-
-    if (seaFrontCurrentX <= 0) {
-        seaFrontCurrentX -= e.deltaY / 50;
-        seaFront.style.transform = "translateY(" + seaFrontCurrentX + "px)";
-        if (seaFrontCurrentX > 0){
-            seaFrontCurrentX = 0;
-        }
-    }
-
+    seaFront.style.transform = "translateY(" + (-posY*.75) + "px)";
+    beach.style.transform = "translateY(" + (-posY*.50) + "px)";
+    seaBack.style.transform = "translateY(" + (-posY*.50) + "px)";
+    palmsFront.style.transform = "translateY(" + (-posY*.40) + "px)";
+    palmsBack.style.transform = "translateY(" + (-posY*.30) + "px)";
+    mountainFront.style.transform = "translateY(" + (-posY*.20) + "px)";
+    mountain.style.transform = "translateY(" + (-posY*.10) + "px)";
 });
