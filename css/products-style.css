@@ -27,9 +27,10 @@ body{
 
 .bg_sky{
     position: absolute;
-    background-image: url(../images/products-illustration/sky-01.svg);
-    width: 100%;
-    height: 1080px;
+    background-image: url(../images/waves-white-02.svg);
+    background-color: #3993fa;
+    width: 3500px;
+    height: 100%;
     z-index: -5000;
 }
 
