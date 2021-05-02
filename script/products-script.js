@@ -1,10 +1,15 @@
 
+const viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+/* Scene rotation speed */
 var currentSpeed = 0;
 
-/* Aktualna pozicia v rolovani vyjadrena v stupnoch */
+/* Scene position in degrees */
 var currentAlpha = 0;
-/* Polomer kruhu po ktorom rotujem produkty */
+
+/* Scene radius for circle */
 var radius = viewport_height / 2;
+
 /* Scale Max a Min definuje maximalne zvacsenie a maximalne zmensenie */
 var scaleMaxFactor = 1;
 var scaleMinFactor = 0.8;
@@ -17,10 +22,10 @@ document.onkeydown = function (e) {
 
     switch (e.key) {
         case 'ArrowUp':
-			currentSpeed += 2;
+			currentSpeed -= 2;
             break;
         case 'ArrowDown':
-			currentSpeed -= 2;
+			currentSpeed += 2;
             break;
         case 'ArrowLeft':
             // left arrow
@@ -75,18 +80,20 @@ function moveScene(){
 }
 
 function place_product_div(item, angle){
-    y = 100 + radius + radius * Math.sin(Math.PI * angle/180);
-    x = (-1) * radius * Math.cos(Math.PI * angle/180);
+    var y = 100 + radius + radius * Math.sin(Math.PI * angle/180);
+    var x = (-1) * radius * Math.cos(Math.PI * angle/180);
 
     var opacity = 1.0;
     if (x < 0) {
-        opacity = 0.2 + 0.8 * (radius+x)/(radius);
+        opacity = 1.0 * (radius+x)/(radius);
     }
 	var realScale = scaleMinFactor + scaleMaxFactor * ((x+500)/(2*radius));
 
     //console.log(angle, x, realScale);
     item.style.transform = "translateY(" + y + "px) scale(" + realScale + ")";
     item.style.opacity = "" + opacity;
-    item.style.zIndex = "" + Math.floor(x);
+
+    var zx = (-1) * radius * Math.cos(Math.PI * (angle+45)/180);
+    item.style.zIndex = "" + Math.floor(zx);
 }
 

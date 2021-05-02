@@ -1,8 +1,6 @@
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-const viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
 window.onscroll = function () {
     stickybar(document.URL.includes("index.html"));
     scrollFunction();

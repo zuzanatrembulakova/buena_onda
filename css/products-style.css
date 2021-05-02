@@ -43,6 +43,11 @@ body{
 }
 .product_img{
     width: 300px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+.product_img:hover{
+    filter: brightness(1.08);
 }
 
 .move_image_animation {
