@@ -275,12 +275,12 @@ p{
 
     .menu_selected {
         color: #ffffff;
-        background-color: #6da7ff;
+        background-color: #3993fa;
     }
 
     .menu ul li a:hover {
         color: #ffffff;
-        background: #6da7ff;
+        background: #3993fa;
     }
 
     .menu_effects {
