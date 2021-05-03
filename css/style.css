@@ -13,12 +13,17 @@ html {
     box-sizing: border-box;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Archivo';
     letter-spacing: 4px;
     font-size: 23px;
     color: #3993fa;
     text-transform: uppercase;
+}
+
+article p {
+    margin: 0px 25%;
+    font-size: 18px;
 }
 
 article h1 {
@@ -27,9 +32,17 @@ article h1 {
     margin-top: 40px;
 }
 
+article h2{
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
 p {
     font-size: 15px;
     word-spacing: 0px;
+    color: #3993fa;
 }
 
 .main_sticky {
