@@ -81,6 +81,11 @@ body{
     right: 0;
     text-align: center;
 }
+
+.product_wrapper h1 {
+    font-size: 18px;
+}
+
 .product_img{
     height: 370px;
     transition: .2s ease;
