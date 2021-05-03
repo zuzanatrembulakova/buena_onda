@@ -18,14 +18,6 @@
     }
 }
 
-h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 23px;
-    letter-spacing: 2px;
-    color: #ffffff;
-}
-
 .intro_wrapper{
     position: absolute;
     top: 50%;
@@ -67,8 +59,10 @@ h1{
 }
 
 .intro_title{
+    text-align: center;
+    width: 80%;
+    line-height: 30px;
     color: #3993FA;
-    /*text-transform: none;*/
 }
 
 .sun, .clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back ,.white_waves, .sea_front{
@@ -124,7 +118,7 @@ h1{
 .under_sea{
     background-color: #3993FA;
     width: 100%;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .three_icons{

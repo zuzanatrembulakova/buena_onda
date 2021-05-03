@@ -13,20 +13,20 @@ if (page_type != null && page_type == "nologo") {
     }, 5000);
 }
 
-var mountainCurrentX = 0;
-var beachCurrentX = 0;
-var seaCurrentX = 0;
+/*var mountainCurrentX = 0;
 var palmsBackCurrentX = 0;
-var palmsFrontCurrentX = 0;
+var palmsFrontCurrentX = 0;*/
+/*var beachCurrentX = 0;
+var seaCurrentX = 0;*/
 var seaFrontCurrentX = 0;
 var whiteWavesFrontCurrentX = 0;
 
-var mountain = document.querySelector('.mountain_back');
+/*var mountain = document.querySelector('.mountain_back');
 var mountainFront = document.querySelector('.mountain_front');
-var beach = document.querySelector('.beach');
-var seaBack = document.querySelector('.sea_back');
 var palmsBack = document.querySelector('.palms_back');
-var palmsFront = document.querySelector('.palms_front');
+var palmsFront = document.querySelector('.palms_front');*/
+/*var beach = document.querySelector('.beach');
+var seaBack = document.querySelector('.sea_back');*/
 var seaFront = document.querySelector('.sea_front');
 var whiteWaves = document.querySelector('.white_waves');
 
@@ -35,10 +35,10 @@ document.addEventListener('scroll', function (e) {
 
     whiteWaves.style.transform = "translateY(" + (-posY*.85) + "px)";
     seaFront.style.transform = "translateY(" + (-posY*.75) + "px)";
-    beach.style.transform = "translateY(" + (-posY*.50) + "px)";
-    seaBack.style.transform = "translateY(" + (-posY*.50) + "px)";
-    palmsFront.style.transform = "translateY(" + (-posY*.40) + "px)";
+    /*beach.style.transform = "translateY(" + (-posY*.50) + "px)";
+    seaBack.style.transform = "translateY(" + (-posY*.50) + "px)";*/
+    /*palmsFront.style.transform = "translateY(" + (-posY*.40) + "px)";
     palmsBack.style.transform = "translateY(" + (-posY*.30) + "px)";
     mountainFront.style.transform = "translateY(" + (-posY*.20) + "px)";
-    mountain.style.transform = "translateY(" + (-posY*.10) + "px)";
+    mountain.style.transform = "translateY(" + (-posY*.10) + "px)";*/
 });
