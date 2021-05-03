@@ -46,10 +46,10 @@ body{
     height: 250px;
     transition: .2s ease;
     cursor: pointer;
-    filter: brightness(1.08);
+    filter: brightness(1);
 }
 .product_img:hover{
-    filter: brightness(1);
+    filter: brightness(1.08);
 }
 
 .move_image_animation {

@@ -37,7 +37,7 @@ h1{
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.70);
     padding: 30px;
     width: 600px;
 
@@ -124,8 +124,31 @@ h1{
 .under_sea{
     background-color: #3993FA;
     width: 100%;
-    height: 1000px;
     padding-top: 50px;
+}
+
+.three_icons{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );;
+    justify-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0px auto 0px auto;
+}
+.three_icons div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.three_icons div p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 80%;
+}
+.three_icons img{
+    width: 200px;
 }
 
 .bubbles_wrapper {
@@ -173,6 +196,20 @@ h1{
     100% {
         transform: translateY(-80vh);
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1020px){
+
+}
+
+@media screen and (max-width: 690px){
+    .intro_wrapper{
+        width: 90%;
+    }
+
+    .three_icons div{
+        margin: 30px;
     }
 }
 
