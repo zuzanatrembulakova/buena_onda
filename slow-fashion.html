@@ -13,7 +13,7 @@
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="icons/logo.svg" alt="top"></button>
 
-    <nav id="navbar">
+    <!--    <nav id="navbar">
         <div class="menu_items_wrapper">
             <a href='#' class="menu_item menu_selected">#DressMeSlowly</a>
             <a href="../index.html?page_type=nologo" class="logo_link">
@@ -41,6 +41,59 @@
                 </div>
             </div>
         </div>
+    </nav>-->
+
+    <nav id="menu">
+        <label for="tm" id="toggle-menu"><span class="drop-icon">▾</span></label>
+        <input type="checkbox" id="tm">
+        <ul class="main-menu clearfix">
+            <li><a href="#">#DressMeSlowly
+                    <span class="drop-icon">▾</span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+                </a>
+                <input type="checkbox" id="sm1">
+                <ul class="sub-menu">
+                    <li><a href="#">#DressMeSlowly</a></li>
+                    <li><a href="#">#DressMeSlowly
+                            <!--<span class="drop-icon">▾</span>
+            <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>-->
+                        </a>
+                        <!--<input type="checkbox" id="sm2">
+          <ul class="sub-menu">
+            <li><a href="#">Item 2.2.1</a></li>
+            <li><a href="#">Item 2.2.2</a></li>
+            <li><a href="#">Item 2.2.3</a></li>
+          </ul>-->
+                    </li>
+                    <!--<li><a href="#">Item 3.4</a></li>-->
+                </ul>
+            </li>
+            <li><a href="../index.html?page_type=nologo" class="logo_link">
+                    <div class="nav_icon logo"></div>
+                </a></li>
+            <li><a href="#">Collection '21
+                    <span class="drop-icon">▾</span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+                </a>
+                <input type="checkbox" id="sm2">
+                <ul class="sub-menu">
+                    <li><a href="#">Collection '21</a></li>
+                    <li><a href="#">Collection '21
+                            <!--<span class="drop-icon">▾</span>
+            <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>-->
+                        </a>
+                        <!--<input type="checkbox" id="sm2">
+          <ul class="sub-menu">
+            <li><a href="#">Item 2.2.1</a></li>
+            <li><a href="#">Item 2.2.2</a></li>
+            <li><a href="#">Item 2.2.3</a></li>
+          </ul>-->
+                    </li>
+                    <!--<li><a href="#">Item 3.4</a></li>-->
+                </ul>
+            </li>
+            <!--<li><a href="#">Another Sample</a></li>-->
+        </ul>
     </nav>
 
     <main>
