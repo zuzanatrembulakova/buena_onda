@@ -60,6 +60,10 @@ section {
     margin-top: 20px;
 }
 
+section a {
+    color: #3993fa;
+}
+
 p {
     font-size: 15px;
     word-spacing: 0px;
