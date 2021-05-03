@@ -82,7 +82,15 @@ function moveScene(){
 }
 
 function place_product_div(item, angle){
-    var y = 100 + radius + radius * Math.sin(Math.PI * angle/180);
+
+    if (angle > 360){
+        angle -= 360;
+    }
+    if (angle < 0) {
+        angle += 360;
+    }
+
+    var y = 110 + radius + radius * Math.sin(Math.PI * angle/180);
     var x = (-1) * radius * Math.cos(Math.PI * angle/180);
 
     var opacity = 1.0;
@@ -97,5 +105,14 @@ function place_product_div(item, angle){
 
     var zx = (-1) * radius * Math.cos(Math.PI * (angle+45)/180);
     item.style.zIndex = "" + Math.floor(zx);
+
+    var textOpacity = 1.0;
+    if (angle > 140 && angle < 180){
+        textOpacity = (angle-140)/40.0;
+    }
+    else if (angle < 140 && angle > 90){
+        textOpacity = 0.0;
+    }
+    item.children[0].style.opacity = "" + textOpacity;
 }
 
