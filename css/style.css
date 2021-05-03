@@ -195,7 +195,7 @@ p{
         width: 40px;
         height: 4px;
         display: block;
-        border-radius: 2px;
+        /*border-radius: 2px;*/
         cursor: pointer;
         position: relative;
         z-index: 100;
@@ -207,7 +207,7 @@ p{
         width: 40px;
         height: 4px;
         display: block;
-        border-radius: 2px;
+        /*border-radius: 2px;*/
         position: relative;
         top: -8px;
         transform: rotate(0deg);
@@ -220,7 +220,7 @@ p{
         width: 40px;
         height: 4px;
         display: block;
-        border-radius: 2px;
+        /*border-radius: 2px;*/
         position: relative;
         top: 4px;
         transform: rotate(0deg);
@@ -248,7 +248,7 @@ p{
     }
 
     .menu .menu_content {
-        font-size: 20px;
+        /*font-size: 20px;*/
         text-align: center;
         padding: 10px 0;
     }
@@ -266,7 +266,6 @@ p{
         margin-right: auto;
         text-decoration: none;
         padding: 10px 0;
-        font-weight: bold;
     }
 
     .menu_item_mobile {
