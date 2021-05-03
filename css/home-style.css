@@ -121,6 +121,12 @@
     padding: 50px 0;
 }
 
+.under_sea h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 .three_icons{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );;

@@ -13,14 +13,21 @@ html {
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     font-family: 'Archivo';
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: 23px;
     color: #3993fa;
+    text-transform: uppercase;
 }
 
-p{
+article h1 {
+    font-size: 37px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
     font-size: 15px;
     word-spacing: 0px;
 }
@@ -51,7 +58,8 @@ p{
     display: none;
     transition: .5s;
 }
-.btn{
+
+.btn {
     font-family: 'Archivo';
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -68,31 +76,36 @@ p{
     color: #3993FA;
     font-weight: 400;
 }
-.btn span{
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.btn span:after{
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.btn:hover span{
-  padding-right: 25px;
-}
-.btn:hover span:after{
-  opacity: 1;
-  right: 0;
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
-#navbar{
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#navbar {
     z-index: 100;
 }
+
 #navbar_mobile {
     display: none;
 }
@@ -110,6 +123,7 @@ p{
     text-align: center;
     width: 150px;
 }
+
 .logo {
     background-image: url(../icons/logo-01.svg);
     width: 75px;
@@ -118,12 +132,15 @@ p{
     margin: auto;
     transition: .3s ease;
 }
+
 .icon_in {
     animation: movein .2s linear;
 }
+
 .icon_out {
     animation: moveout .2s linear;
 }
+
 @keyframes movein {
     from {
         background-position: 140px 0;
@@ -133,6 +150,7 @@ p{
         background-position: 70px 0;
     }
 }
+
 @keyframes moveout {
     from {
         background-position: 70px 0;
@@ -150,10 +168,12 @@ p{
     font-size: 18px;
     transition: .3s ease;
 }
+
 .menu_item:hover,
 .menu_selected {
     color: #3993fa;
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -338,5 +358,3 @@ p{
         transform: translateY(-30%);
     }
 }
-
-
