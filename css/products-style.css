@@ -40,7 +40,7 @@ body{
     top: 50%;
     z-index: -5000;
 }
-.sun, .clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back{
+/*.sun, */.clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back{
     width: 100%;
     height: 700px;
     position: absolute;
@@ -82,10 +82,10 @@ body{
     text-align: center;
 }
 .product_img{
-    height: 250px;
+    height: 370px;
     transition: .2s ease;
     cursor: pointer;
-    filter: brightness(1);
+    /*filter: drop-shadow(5px 5px 5px #9cffcf);*/
 }
 .product_img:hover{
     filter: brightness(1.08);

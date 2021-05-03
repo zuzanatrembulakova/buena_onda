@@ -11,8 +11,10 @@ var currentAlpha = 0;
 var radius = viewport_height / 2;
 
 /* Scale Max a Min definuje maximalne zvacsenie a maximalne zmensenie */
-var scaleMaxFactor = 1;
-var scaleMinFactor = 0.8;
+/*var scaleMaxFactor = 1;*/
+var scaleMaxFactor = 1.5;
+/*var scaleMinFactor = 0.8;*/
+var scaleMinFactor = 0;
 
 var moveAnimationIsRunning = false;
 
@@ -22,10 +24,10 @@ document.onkeydown = function (e) {
 
     switch (e.key) {
         case 'ArrowUp':
-			currentSpeed -= 2;
+			currentSpeed -= 3;
             break;
         case 'ArrowDown':
-			currentSpeed += 2;
+			currentSpeed += 3;
             break;
         case 'ArrowLeft':
             // left arrow
