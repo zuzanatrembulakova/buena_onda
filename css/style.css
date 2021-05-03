@@ -59,6 +59,21 @@ p {
     transition: .5s;
 }
 
+.ig {
+    margin-left: 20px;
+    background-image: url("../icons/instagram-03.svg");
+    background-size: contain;
+    height: 5vh;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+footer {
+    background-color: #3993fa;
+    border-top: 1px white solid;
+    padding: 20px;
+}
+
 .btn {
     font-family: 'Archivo';
     text-transform: uppercase;
