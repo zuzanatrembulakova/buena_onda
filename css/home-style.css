@@ -21,7 +21,7 @@
 h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 23px;
     letter-spacing: 2px;
     color: #ffffff;
 }
@@ -68,7 +68,7 @@ h1{
 
 .intro_title{
     color: #3993FA;
-    text-transform: none;
+    /*text-transform: none;*/
 }
 
 .sun, .clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back ,.white_waves, .sea_front{
@@ -143,8 +143,8 @@ h1{
 .three_icons div p {
     text-align: center;
     color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    /*letter-spacing: 2px;*/
     width: 80%;
 }
 .three_icons img{
