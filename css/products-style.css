@@ -85,10 +85,11 @@ body{
     height: 370px;
     transition: .2s ease;
     cursor: pointer;
-    /*filter: drop-shadow(5px 5px 5px #9cffcf);*/
+    filter: drop-shadow(5px 5px #3993fa);
 }
 .product_img:hover{
     filter: brightness(1.08);
+    filter: drop-shadow(5px 5px #3993fa);
 }
 
 .move_image_animation {
