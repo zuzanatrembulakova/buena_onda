@@ -21,15 +21,18 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+article {
+    margin: 100px 20%;
+}
+
 article p {
-    margin: 0px 25%;
     font-size: 18px;
 }
 
 article h1 {
     font-size: 37px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 article h2{
