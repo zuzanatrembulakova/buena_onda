@@ -34,9 +34,10 @@ section {
     margin-top: 20px;
 }
 
-section a {
+/*section a {
     color: #3993fa;
-}
+}*/
+
 
 /*
 h1{
@@ -50,16 +51,11 @@ h1{
     align-items: center;
     z-index: 10;
     height: 80px;
+    font-size: 18px;
 }
 
 #menu a {
     text-decoration: none;
-}
-
-#menu ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #menu .main-menu {
