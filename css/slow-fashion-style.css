@@ -1,3 +1,43 @@
+article h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+article h4 {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 5px;
+}
+
+article {
+    margin: 100px 20%;
+}
+
+article p {
+    font-size: 18px;
+}
+
+article h1 {
+    font-size: 37px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+article h2 {
+    color: #707070;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+section a {
+    color: #3993fa;
+}
+
 /*
 h1{
     font-size: 37px;
@@ -5,8 +45,11 @@ h1{
 */
 
 #menu {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    height: 80px;
 }
 
 #menu a {
@@ -14,8 +57,9 @@ h1{
 }
 
 #menu ul {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu .main-menu {
@@ -31,12 +75,12 @@ h1{
     display: none;
 }
 
-#menu li,
+/*#menu li,
 #toggle-menu,
 #menu .sub-menu {
-    /*border-style: solid;
-  border-color: rgba(0, 0, 0, .05);*/
-}
+    border-style: solid;
+  border-color: rgba(0, 0, 0, .05);
+}*/
 
 #menu li,
 #toggle-menu {
