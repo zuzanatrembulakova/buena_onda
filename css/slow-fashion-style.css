@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 article {
     margin: 100px 20%;
 }
@@ -40,111 +44,6 @@ article h3 {
     color: #707070;
     margin-bottom: 5px;
     font-family: 'Archivo Black', sans-serif;
-}
-
-.logo {
-    background-image: url(../icons/logo-01.svg);
-    width: 70px;
-    height: 70px;
-    padding: 5px;
-    margin: auto;
-    transition: .5s ease;
-}
-.icon_in {
-    animation: movein .2s linear;
-}
-.icon_out {
-    animation: moveout .2s linear;
-}
-@keyframes movein {
-    from {
-        background-position: 140px 0;
-    }
-
-    to {
-        background-position: 70px 0;
-    }
-}
-@keyframes moveout {
-    from {
-        background-position: 70px 0;
-    }
-
-    to {
-        background-position: 140px 0;
-    }
-}
-
-.topnav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: #ffffff;
-}
-.topnav a {
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-}
-.active {
-    background-color: #04AA6D;
-    color: #000;
-}
-
-.dropdown .dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    color: #000;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown_content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 160px;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-    z-index: 1;
-}
-.dropdown_content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-.dropdown_content a:hover {
-    color: white;
-    background-color: #3993fa;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-.dropbtn:hover {
-    color: #3993fa;
-    cursor: pointer;
-}
-
-.dropdown:hover .dropdown_content {
-    display: block;
-}
-
-.dropdown_content2, .dropdown_content1{
-    display: none;
-    cursor: pointer;
-    outline: none;
-}
-.dropdown_content_wrapper{
-    display: flex;
-    flex-direction: column;
 }
 
 /*#navbar {

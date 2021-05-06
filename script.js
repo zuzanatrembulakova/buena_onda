@@ -1,5 +1,4 @@
 var navbar = document.getElementById("navbar");
-var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 const viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -80,4 +79,22 @@ function scrollFunction() {
 function topFunction() { // eslint-disable-line no-unused-vars
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function dropDownFirst() {
+  var dropDownContent = document.querySelector(".dropdown_content1");
+  if (dropDownContent.style.display === "none") {
+    dropDownContent.style.display = "block";
+  } else {
+    dropDownContent.style.display = "none";
+  }
+}
+
+function dropDownSecond() {
+  var dropDownContent2 = document.querySelector(".dropdown_content2");
+  if (dropDownContent2.style.display === "none") {
+    dropDownContent2.style.display = "block";
+  } else {
+    dropDownContent2.style.display = "none";
+  }
 }

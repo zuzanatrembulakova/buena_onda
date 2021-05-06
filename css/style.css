@@ -4,7 +4,6 @@
 
 html {
     scroll-behavior: smooth;
-    /*background-color: #f5f5f5;*/
     font-family: 'Century Gothic', sans-serif;
 }
 
@@ -213,6 +212,112 @@ footer h3 {
     z-index: 100;
 }
 
+.logo {
+    background-image: url(../icons/logo-01.svg);
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin: auto;
+    transition: .5s ease;
+}
+.icon_in {
+    animation: movein .2s linear;
+}
+.icon_out {
+    animation: moveout .2s linear;
+}
+@keyframes movein {
+    from {
+        background-position: 140px 0;
+    }
+
+    to {
+        background-position: 70px 0;
+    }
+}
+@keyframes moveout {
+    from {
+        background-position: 70px 0;
+    }
+
+    to {
+        background-position: 140px 0;
+    }
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.active {
+    background-color: #04AA6D;
+    color: #000;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown_content {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 10000;
+}
+.dropdown_content a:hover {
+    color: white;
+    background-color: #3993fa;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropbtn:hover {
+    color: #3993fa;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content2, .dropdown_content1{
+    display: none;
+    cursor: pointer;
+    outline: none;
+}
+.dropdown_content_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 #navbar_mobile {
     display: none;
 }
@@ -226,48 +331,6 @@ footer h3 {
     background-color: #ffffff;
 }
 
-.logo_link {
-    text-align: center;
-    width: 150px;
-}
-
-.logo {
-    background-image: url(../icons/logo-01.svg);
-    width: 75px;
-    height: 75px;
-    padding: 5px;
-    margin: auto;
-    transition: .3s ease;
-}
-
-.icon_in {
-    animation: movein .2s linear;
-}
-
-.icon_out {
-    animation: moveout .2s linear;
-}
-
-@keyframes movein {
-    from {
-        background-position: 140px 0;
-    }
-
-    to {
-        background-position: 70px 0;
-    }
-}
-
-@keyframes moveout {
-    from {
-        background-position: 70px 0;
-    }
-
-    to {
-        background-position: 140px 0;
-    }
-}
-
 .menu_item {
     padding: 30px 1.5%;
     text-decoration: none;
@@ -275,7 +338,6 @@ footer h3 {
     font-size: 18px;
     transition: .3s ease;
 }
-
 .menu_item:hover,
 .menu_selected {
     color: #3993fa;
@@ -346,7 +408,6 @@ footer h3 {
         position: relative;
         z-index: 100;
     }
-
     .open:before {
         content: "";
         background-color: #000000;
@@ -359,7 +420,6 @@ footer h3 {
         transform: rotate(0deg);
         transition: all 0.3s ease;
     }
-
     .open:after {
         content: "";
         background-color: #000000;
@@ -392,7 +452,6 @@ footer h3 {
         right: 0;
         top: 100%;
     }
-
     .menu .menu_content {
         /*font-size: 20px;*/
         text-align: center;
@@ -404,7 +463,6 @@ footer h3 {
         padding: 0;
         margin: 0 auto;
     }
-
     .menu ul li a {
         display: block;
         width: auto;
@@ -422,7 +480,6 @@ footer h3 {
         color: #ffffff;
         background-color: #3993fa;
     }
-
     .menu ul li a:hover {
         color: #ffffff;
         background: #3993fa;
@@ -433,7 +490,6 @@ footer h3 {
         visibility: hidden;
         transition: opacity 0.5s, visibility 0.5s;
     }
-
     .menu_effects ul {
         transform: translateY(0%);
         transition: all 0.5s;
