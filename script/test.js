@@ -1,5 +1,4 @@
-/*var navbar = document.getElementById("navbar");*/
-var navbar = document.getElementById("myTopnav");
+var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 window.onscroll = function () {
@@ -44,7 +43,23 @@ function mOut() {
     navIcon.classList.add("icon_out");
 }
 
+function dropDownFirst() {
+  var dropDownContent = document.querySelector(".dropdown_content1");
+  if (dropDownContent.style.display === "none") {
+    dropDownContent.style.display = "block";
+  } else {
+    dropDownContent.style.display = "none";
+  }
+}
 
+function dropDownSecond() {
+  var dropDownContent2 = document.querySelector(".dropdown_content2");
+  if (dropDownContent2.style.display === "none") {
+    dropDownContent2.style.display = "block";
+  } else {
+    dropDownContent2.style.display = "none";
+  }
+}
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
