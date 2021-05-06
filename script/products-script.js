@@ -1,5 +1,4 @@
 
-const viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
 /* Scene rotation speed */
 var currentSpeed = 0;

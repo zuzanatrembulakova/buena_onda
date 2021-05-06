@@ -1,10 +1,30 @@
-/*var navbar = document.getElementById("navbar");*/
+var navbar = document.getElementById("navbar");
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
+
+const viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
 window.onscroll = function () {
     stickybar(document.URL.includes("index.html"));
     scrollFunction();
+
+    check_and_add_fadein_animation("fadeinleft", 1.5);
+    check_and_add_fadein_animation("fadeinright", 1.5);
+    check_and_add_fadein_animation("fadeinbottom", 1.5);
+    check_and_add_fadein_animation("fadein", 1.5);
+}
+
+function check_and_add_fadein_animation(animationName, animationTime) {
+
+    var elements = document.getElementsByClassName(animationName);
+
+    for (i = 0; i < elements.length; i++) {
+        var offset = elements[i].offsetTop;
+
+        if (window.pageYOffset + viewport_height > offset) {
+            elements[i].style.animation = animationName + " " + animationTime + "s";
+        }
+    }
 }
 
 var prevScrollpos = window.pageYOffset;

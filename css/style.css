@@ -290,6 +290,24 @@ footer h3 {
     transition: top 0.3s;
 }
 
+@keyframes fadeinleft {
+      0%{ transform: translate(-1000px, 0px);  }
+    100%{ transform: translate(0px, 0px);     }
+}
+@keyframes fadeinright {
+      0%{ transform: translate(1000px, 0px);  }
+    100%{ transform: translate(0px, 0px);     }
+}
+@keyframes fadeinbottom {
+      0%{ transform: translate(0px, 800px);  }
+    100%{ transform: translate(0px, 0px);     }
+}
+@keyframes fadein {
+      0%{ opacity: 0;  }
+    50%{opacity: .5;}
+    100%{ opacity: 1;     }
+}
+
 @media screen and (max-width: 1025px) {
 
     /*Navigation bar*/
