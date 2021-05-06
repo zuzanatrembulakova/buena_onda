@@ -18,7 +18,7 @@ article h2 {
 }
 
 .single_tip {
-    margin: 150px auto;
+    margin: 20px auto 130px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
