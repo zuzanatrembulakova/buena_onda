@@ -27,6 +27,9 @@ article h2 {
 .single_tip > img{
     width: 100%;
 }
+.text_right{
+    text-align: right;
+}
 
 article h3 {
     font-size: 18px;
@@ -39,7 +42,112 @@ article h3 {
     font-family: 'Archivo Black', sans-serif;
 }
 
-#navbar {
+.logo {
+    background-image: url(../icons/logo-01.svg);
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin: auto;
+    transition: .5s ease;
+}
+.icon_in {
+    animation: movein .2s linear;
+}
+.icon_out {
+    animation: moveout .2s linear;
+}
+@keyframes movein {
+    from {
+        background-position: 140px 0;
+    }
+
+    to {
+        background-position: 70px 0;
+    }
+}
+@keyframes moveout {
+    from {
+        background-position: 70px 0;
+    }
+
+    to {
+        background-position: 140px 0;
+    }
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.active {
+    background-color: #04AA6D;
+    color: #000;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+.dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown_content a:hover {
+    color: white;
+    background-color: #3993fa;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropbtn:hover {
+    color: #3993fa;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content2, .dropdown_content1{
+    display: none;
+    cursor: pointer;
+    outline: none;
+}
+.dropdown_content_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/*#navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +167,7 @@ article h3 {
 #navbar input[type="checkbox"],
 #navbar ul span.drop-icon {
     display: none;
-}
+}*/
 
 /*#menu li,
 #toggle-menu,
@@ -68,7 +176,7 @@ article h3 {
   border-color: rgba(0, 0, 0, .05);
 }*/
 
-#navbar li,
+/*#navbar li,
 #toggle-menu {
     border-width: 0 0 1px;
 }
@@ -127,12 +235,12 @@ article h3 {
     text-align: center;
     background-color: #fff;
     border: 1px solid #000;
-    /*text-shadow: 0 0 0 transparent;*/
+    text-shadow: 0 0 0 transparent;
     color: #000;
 }
 #navbar .drop-icon {
     line-height: 1;
-}
+}*/
 
 @media only screen and (max-width: 64em) and (min-width: 52.01em) {
     #navbar li {
