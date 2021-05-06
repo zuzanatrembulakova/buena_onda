@@ -93,26 +93,26 @@ function place_product_div(item, angle){
     var y = 110 + radius + radius * Math.sin(Math.PI * angle/180);
     var x = (-1) * radius * Math.cos(Math.PI * angle/180);
 
-    var opacity = 1.0;
+    /*var opacity = 1.0;
     if (x < 0) {
         opacity = 1.0 * (radius+x)/(radius);
-    }
+    }*/
 	var realScale = scaleMinFactor + scaleMaxFactor * ((x+500)/(2*radius));
 
     //console.log(angle, x, realScale);
     item.style.transform = "translateY(" + y + "px) scale(" + realScale + ")";
-    item.style.opacity = "" + opacity;
+    /*item.style.opacity = "" + opacity;*/
 
     var zx = (-1) * radius * Math.cos(Math.PI * (angle+45)/180);
     item.style.zIndex = "" + Math.floor(zx);
 
-    var textOpacity = 1.0;
+    var itemOpacity = 1.0;
     if (angle > 140 && angle < 180){
-        textOpacity = (angle-140)/40.0;
+        itemOpacity = (angle-140)/40.0;
     }
     else if (angle < 140 && angle > 90){
-        textOpacity = 0.0;
+        itemOpacity = 0.0;
     }
-    item.children[0].style.opacity = "" + textOpacity;
+    item.style.opacity = "" + itemOpacity;
 }
 
