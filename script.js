@@ -6,7 +6,7 @@ const viewport_height = window.innerHeight || document.documentElement.clientHei
 window.onscroll = function () {
     stickybar(document.URL.includes("index.html"));
 
-    if(document.getElementById("topBtn")){
+    if (document.getElementById("topBtn")) {
         scrollFunction();
     }
 
@@ -85,21 +85,21 @@ function topFunction() { // eslint-disable-line no-unused-vars
 }
 
 function dropDownFirst() {
-  var dropDownContent = document.querySelector(".dropdown_content1");
-    console.log(dropDownContent.style.display);
-  if (dropDownContent.style.display == "none" ||
-     dropDownContent.style.display == "") {
-    dropDownContent.style.display = "block";
-  } else {
-    dropDownContent.style.display = "none";
-  }
+    var dropDownContent = document.querySelector(".dropdown_content1");
+    if (dropDownContent.style.display == "none" ||
+        dropDownContent.style.display == "") {
+        dropDownContent.style.display = "block";
+    } else {
+        dropDownContent.style.display = "none";
+    }
 }
 
 function dropDownSecond() {
-  var dropDownContent2 = document.querySelector(".dropdown_content2");
-  if (dropDownContent2.style.display == "none") {
-    dropDownContent2.style.display = "block";
-  } else {
-    dropDownContent2.style.display = "none";
-  }
+    var dropDownContent2 = document.querySelector(".dropdown_content2");
+    if (dropDownContent2.style.display == "none" ||
+        dropDownContent2.style.display == "") {
+        dropDownContent2.style.display = "block";
+    } else {
+        dropDownContent2.style.display = "none";
+    }
 }
