@@ -23,20 +23,36 @@
 
     <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="icons/logo.svg" alt="top"></button>
 
+    <nav class="topnav" id="navbar">
 
-    <nav id="navbar">
-        <div class="menu_items_wrapper">
-            <a href='slow-fashion.html' class="menu_item">#DressMeSlowly</a>
-            <a href="../index.html" class="logo_link">
+        <div class="dropdown">
+            <button class="dropbtn">#DressMeSlowly
+
+                <label class="fa fa-caret-down">▾</label>
+            </button>
+            <div class="dropdown_content">
+                <a href="slow-fashion.html">About</a>
+                <a href="#">Link 2</a>
+            </div>
+        </div>
+        <a href="../index.html?page_type=nologo" class="logo_link">
                 <div class="nav_icon logo"></div>
             </a>
-            <a href='products.html' class="menu_item">Collection '21</a>
+        <div class="dropdown">
+            <button class="dropbtn">Collection '21
+
+                <label class="fa fa-caret-down">▾</label>
+            </button>
+            <div class="dropdown_content">
+                <a href="products.html">Products</a>
+                <a href="#">Link 2</a>
+            </div>
         </div>
     </nav>
 
     <nav id="navbar_mobile">
         <div class="menu_items_wrapper_mobile">
-            <a href='#' class="logo_mobile logo_mobile_home"><img src="icons/logo.svg" alt="logo"></a>
+            <a href='../index.html?page_type=nologo' class="logo_mobile logo_mobile_home"><img src="icons/logo.svg" alt="logo"></a>
             <input type="checkbox" id="menu_toggle">
             <label for="menu_toggle" class="menu_open">
                 <div class="open"></div>
@@ -45,10 +61,28 @@
             <div class="menu menu_effects">
                 <label for="menu_toggle"></label>
                 <div class="menu_content">
-                    <ul>
-                        <li><a href='slow-fashion.html' class="menu_item_mobile">#DressMeSlowly</a></li>
-                        <li><a href='products.html' class="menu_item_mobile">Collection '21</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropDownFirst()">#DressMeSlowly
+                            <label class="fa fa-caret-down">▾</label>
+                        </button>
+                        <div class="dropdown_content1">
+                            <div class="dropdown_content_wrapper">
+                                <a href="slow-fashion.html">About</a>
+                                <a href="#">Link 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropDownSecond()">Collection '21
+                            <label title="Toggle Drop-down" class="fa fa-caret-down">▾</label>
+                        </button>
+                        <div class="dropdown_content2">
+                            <div class="dropdown_content_wrapper">
+                                <a href="products.html">Products</a>
+                                <a href="#">Link 2</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
