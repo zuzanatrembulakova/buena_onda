@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Buena Onda Style Tile</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type=image/png href="../icons/logo.svg">
 </head>
 
 <body>
     <div class="header_wrapper">
         <header>
+            <div class="nav_icon"></div>
             <h1>Buena Onda<br>Style Tile</h1>
         </header>
     </div>
@@ -21,42 +22,55 @@
 
             <section class="swatches">
 
-                <div>
-                    <div class="ocean"></div>
-                    <h4>Ocean</h4>
-                    <p>#3993FA</p>
-                </div>
-                <div>
-                    <div class="freedom"></div>
-                    <h4>Freedom</h4>
-                    <p>#9cffcf</p>
-                </div>
-                <div>
-                    <div class="bliss"></div>
-                    <h4>Bliss</h4>
-                    <p>#ffffff</p>
-                </div>
-                <div>
-                    <div class="grey"></div>
-                    <h4>Grey</h4>
-                    <p>#707070</p>
+                <h3 class="section_heading">Color swatches</h3>
+
+                <div class="swatches_wrapper">
+                    <div>
+                        <div class="ocean"></div>
+                        <h4>Ocean</h4>
+                        <p>#3993FA</p>
+                    </div>
+                    <div>
+                        <div class="freedom"></div>
+                        <h4>Freedom</h4>
+                        <p>#9cffcf</p>
+                    </div>
+                    <div>
+                        <div class="bliss"></div>
+                        <h4>Bliss</h4>
+                        <p>#ffffff</p>
+                    </div>
+                    <div>
+                        <div class="grey"></div>
+                        <h4>Grey</h4>
+                        <p>#707070</p>
+                    </div>
                 </div>
 
             </section>
 
-             <section class="button">
-                <h3 class="section_heading">Button</h3>
-                <div>
+             <section class="buttons">
+                <h3 class="section_heading">Buttons & Logo</h3>
+                <div class="buttons_wrapper">
                     <div class="btn"><span>button</span></div>
-                    <button id="topBtn"><img src="../icons/logo.svg" alt="top"></button>
+                    <div id="topBtn"><img src="../icons/logo.svg" alt="top"></div>
+
+                    <p class="font_details btn_text">Button<br> example</p>
+                    <p class="font_details topBtn_text">Back to <br>top button</p>
                 </div>
             </section>
 
-            <section class="logo">
-                <h3 class="section_heading">Logo</h3>
-                <div>
-                    <div class="nav_icon"></div>
+            <section class="adjectives">
+                <h3 class="section_heading">Adjectives</h3>
+
+                <div class="adjectives_wrapper">
+                    <p>Clean</p>
+                    <p>BRIGHT</p>
+                    <p>relaxed</p>
+                    <p>Island Life</p>
+                    <p>RETRO</p>
                 </div>
+
             </section>
 
         </div>
@@ -65,6 +79,12 @@
 
             <section class="patterns">
                 <h3 class="section_heading">Patterns</h3>
+
+                <div class="pattern_wrapper">
+                    <img src="../images/grain.png">
+                    <img src="pattern-waves-01.jpg">
+                    <img src="pattern-waves2-01.jpg">
+                </div>
             </section>
 
             <section class="typography_main">
@@ -93,14 +113,6 @@
                 </p>
             </section>
 
-            <section class="adjectives">
-                <h3 class="section_heading">Adjectives</h3>
-                <ul>
-                    <li>modern</li>
-                    <li>SIMPLE</li>
-                    <li>clear</li>
-                </ul>
-            </section>
         </div>
 
     </main>
@@ -111,6 +123,6 @@
         </footer>
     </div>
 
-    <script href="script.js"></script>
+    <script href="style-tile-script.js"></script>
 
 </body></html>

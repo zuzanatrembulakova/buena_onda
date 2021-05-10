@@ -26,6 +26,14 @@ html {
     padding: 20px 50px;
 }
 
+header{
+    align-items: center;
+}
+
+header > div{
+    margin-right: 30px;
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,28 +48,28 @@ main{
     margin-bottom: 15px;
 }
 
-.swatches, .typography_main, .patterns, .button, .logo{
+.swatches, .typography_main, .patterns, .buttons, .adjectives{
     margin: 40px 30px 50px 50px;
 }
 
-.swatches{
+header, .swatches_wrapper, .adjectives_wrapper{
     display: flex;
 }
-.swatches div{
+.swatches_wrapper div{
     display: flex;
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
     align-items: center;
 }
-.swatches div div{
+.swatches_wrapper div div{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: 14px 16px;
     box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, 0.2);
 }
-.swatches h4{
+.swatches_wrapper h4{
     font-family: 'Archivo Black', sans-serif;
     letter-spacing: 4px;
     margin: 0 0 5px 0;
@@ -79,19 +87,19 @@ main{
     background-color: #707070;
 }
 
-#topBtn {
-    width: 40px;
-    height: 40px;
-    z-index: 10000;
+.buttons_wrapper{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 220px .3fr;
+    grid-gap: 5px;
+    justify-items: center;
+    text-align: center;
+}
 
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 18px;
-    margin: 30px 0px;
+#topBtn > img{
+    width: 50px;
+    height: 50px;
     transform: rotate(-90deg);
-    transition: .5s;
 }
 
 .btn {
@@ -100,9 +108,9 @@ main{
     letter-spacing: 2px;
     text-align: center;
     font-size: 11px;
-    margin-top: 20px;
     padding: 15px 25px;
     width: 220px;
+    height: 47px;
     transition: all 0.5s;
     cursor: pointer;
     outline: none;
@@ -166,8 +174,22 @@ main{
     }
 }
 
+.adjectives_wrapper p{
+    font-family: 'Archivo Black', sans-serif;
+    color: #3993FA;
+    font-size: 18px;
+    margin-right: 16px;
+    letter-spacing: 2px;
+}
+
+.pattern_wrapper img{
+    width: 150px;
+    height: 150px;
+}
+
 .font_details{
     margin-bottom: 20px;
+    font-size: 16px;
     color: #757575;
     opacity: .6;
 }
@@ -206,4 +228,40 @@ main{
     background-size: auto 6px;
     background-repeat: repeat-x;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 1025px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    .nav_icon{
+        display: none;
+    }
+
+    .swatches_wrapper, .adjectives_wrapper, .pattern_wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );;
+        justify-items: center;
+        width: 80%;
+    }
+
+    .buttons_wrapper{
+        grid-template-columns: 220px;
+        grid-gap: 0px;
+    }
+    .btn_text{
+        grid-row: 2;
+    }
+    #topBtn{
+        grid-row: 3;
+    }
+    .topBtn_text{
+        grid-row: 4;
+    }
 }
