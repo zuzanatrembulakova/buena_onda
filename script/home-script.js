@@ -1,4 +1,4 @@
-// Adds style.display = "none" to the loader after 3.3 seconds to remove it
+// Adds style.display = "none" to the loader after 3 seconds to remove it
 var logo = document.getElementById("preload");
 
 const queryString = window.location.search;
@@ -10,7 +10,7 @@ if (page_type != null && page_type == "nologo") {
 } else {
     setTimeout(function () {
         logo.style.display = "none";
-    }, 5000);
+    }, 3000);
 }
 
 /*var mountainCurrentX = 0;

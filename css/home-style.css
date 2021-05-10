@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: preloadFadeOut 1s ease 4s;
+    animation: preloadFadeOut 1s ease 2s;
 }
 @keyframes preloadFadeOut{
     from{
