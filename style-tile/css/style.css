@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_wrapper{
+    width: 100%;
+    height: auto;
+    background-color: #3993FA;
+    color: #ffffff;
+
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    padding: 20px 50px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section_heading{
+    font-size: 30px;
+    color: #757575;
+    opacity: .6;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.swatches, .typography_main, .patterns, .button, .logo{
+    margin: 40px 30px 50px 50px;
+}
+
+.swatches{
+    display: flex;
+}
+.swatches div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+}
+.swatches div div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 14px 16px;
+    box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, 0.2);
+}
+.swatches h4{
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 4px;
+    margin: 0 0 5px 0;
+}
+.ocean{
+    background-color: #3993FA;
+}
+.freedom{
+    background-color: #9cffcf;
+}
+.bliss{
+    background-color: #ffffff;
+}
+.grey{
+    background-color: #707070;
+}
+
+#topBtn {
+    width: 40px;
+    height: 40px;
+    z-index: 10000;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 30px 0px;
+    transform: rotate(-90deg);
+    transition: .5s;
+}
+
+.btn {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #3993FA;
+    background-color: transparent;
+    color: #3993FA;
+    font-weight: 400;
+}
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn:hover span {
+    padding-right: 25px;
+}
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.nav_icon {
+    background-image: url(../../icons/logo-01.svg);
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.icon_in {
+    animation: movein .2s linear;
+}
+.icon_out {
+    animation: moveout .2s linear;
+}
+@keyframes movein {
+    from {
+        background-position: 140px 0;
+    }
+
+    to {
+        background-position: 70px 0;
+    }
+}
+@keyframes moveout {
+    from {
+        background-position: 70px 0;
+    }
+
+    to {
+        background-position: 140px 0;
+    }
+}
+
+.font_details{
+    margin-bottom: 20px;
+    color: #757575;
+    opacity: .6;
+}
+.h1_sample {
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 4px;
+    font-size: 37px;
+    color: #3993fa;
+    text-transform: uppercase;
+}
+.h2_sample{
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 4px;
+    color: #707070;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+.typography_sample {
+    font-size: 15px;
+    color: #3993fa;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.link_sample {
+    color: #3993fa;
+}
+.wave{
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+}
+.wave:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .7s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%233993fa' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}

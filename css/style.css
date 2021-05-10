@@ -30,7 +30,6 @@ a {
 
 p {
     font-size: 15px;
-    word-spacing: 0px;
     color: #3993fa;
 }
 
@@ -39,7 +38,6 @@ p {
 .green_wave,
 .wave,
 section a {
-    /*background: linear-gradient(to bottom, #fff 0%, #fff 100%);*/
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 3px 3px;
