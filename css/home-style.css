@@ -34,7 +34,6 @@
     width: 600px;
 
     border: 1px solid #000000;
-    /*border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;*/
     box-shadow: 0 5px 30px 0 rgba(90, 116, 148, 0.4);
 
     animation: bounce 1.5s infinite;
@@ -50,7 +49,6 @@
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
-    /*border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;*/
 }
 @keyframes bounce {
   50% {
@@ -65,7 +63,7 @@
     color: #3993FA;
 }
 
-.sun, .clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back ,.white_waves, .sea_front{
+.sea_back ,.white_waves, .sea_front{
     width: 100%;
     height: 700px;
     background-size: cover;
@@ -75,27 +73,6 @@
     z-index: -10;
 }
 
-.sun{
-    background-image: url(../images/home-sea/sun-01.svg);
-}
-.clouds{
-    background-image: url(../images/home-sea/clouds-01.svg);
-}
-.mountain_back{
-    background-image: url(../images/home-sea/mountain-back-01.svg);
-}
-.mountain_front{
-    background-image: url(../images/home-sea/mountain_front-01.svg);
-}
-.palms_back{
-    background-image: url(../images/home-sea/palms_back-01.svg);
-}
-.palms_front{
-    background-image: url(../images/home-sea/palms_front-01.svg);
-}
-.beach{
-    background-image: url(../images/home-sea/beach2-01.svg);
-}
 .sea_back{
     background-image: url(../images/home-sea/sea-back-01.svg);
 }
@@ -133,7 +110,7 @@
     justify-items: center;
     justify-content: center;
     width: 80%;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 50px auto;
 }
 .three_icons div{
     display: flex;
@@ -151,7 +128,7 @@
     width: 200px;
 }
 
-.bubbles_wrapper {
+/*.bubbles_wrapper {
     position: relative;
     width: 100%;
     height: 400px;
@@ -197,7 +174,7 @@
         transform: translateY(-80vh);
         opacity: 0;
     }
-}
+}*/
 
 @media screen and (max-width: 1020px){
 

@@ -40,7 +40,7 @@ body{
     top: 50%;
     z-index: -5000;
 }
-/*.sun, */.clouds, .mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back{
+.mountain_back, .mountain_front, .palms_back, .palms_front, .beach, .sea_back{
     width: 100%;
     height: 700px;
     position: absolute;
@@ -48,12 +48,6 @@ body{
     z-index: -10;
 }
 
-.sun{
-    background-image: url(../images/home-sea/sun-01.svg);
-}
-.clouds{
-    background-image: url(../images/home-sea/clouds-01.svg);
-}
 .mountain_back{
     background-image: url(../images/home-sea/mountain-back-01.svg);
 }
