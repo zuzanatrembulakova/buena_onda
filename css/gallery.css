@@ -135,7 +135,7 @@ a:focus {
 .slide__figure-description {
 	margin: 0;
 	font-style: italic;
-	color: var(--color-text-alt);
+	color: black;
 }
 
 .slide__figure {
@@ -166,6 +166,11 @@ a:focus {
 	display: none;
 }
 
+/*.frame {
+    border: 10px solid #9cffcf;
+    border: 10px solid #3993FA;
+}*/
+
 @media screen and (min-width: 53em) {
 	.message {
 		display: none;
@@ -195,8 +200,9 @@ a:focus {
 		position: relative;
 	}
 	.slideshow__indicator {
-		width: 10px;
+		width: 20px;
 		background: #9cffcf;
+		/*background: #3993FA;*/
 		height: 100%;
 		left: 0;
 		top: 0;
@@ -460,16 +466,20 @@ a:focus {
 		z-index: 4000;
 		padding: 1.25rem;
 	}
-	.arrow-nav__item {
+
+    .arrow-nav__item {
 		pointer-events: auto;
 		border: 0;
 		padding: 0;
 		margin: 0;
 		background: none;
-		color: var(--color-link-alt);
+		color: black;
+        cursor: pointer;
+        font-size: 25px;
 	}
+
 	.arrow-nav__item:hover {
-		color: var(--color-link-hover);
+		color: var(--color-link-alt);
 	}
 	.arrow-nav__item--prev {
 		visibility: hidden;
@@ -495,3 +505,4 @@ a:focus {
 		line-height: 1;
 	}
 }
+
