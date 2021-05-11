@@ -11,9 +11,8 @@ body {
 	--color-bg: #fff;
 	--color-link: #c0c0c0;
 	--color-link-hover: #000;
-	--color-link-alt: #0b44fb;
+	--color-link-alt: #3993FA;
 	--color-link-toc: #878787;
-	font-family: Futura, "futura-pt", Arial, sans-serif;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
@@ -197,7 +196,7 @@ a:focus {
 	}
 	.slideshow__indicator {
 		width: 10px;
-		background: #334bf7;
+		background: #9cffcf;
 		height: 100%;
 		left: 0;
 		top: 0;
