@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('body').ripples({
-			dropRadius: 10, 
+	$('.banner').ripples({
+			dropRadius: 30,
 			perturbance: 0.01,
 		});
 });
