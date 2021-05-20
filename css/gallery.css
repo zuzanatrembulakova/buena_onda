@@ -1,10 +1,11 @@
 main {
-    margin: 0 20vmin;
+    margin: 0 10vmin;
     column-count: 3;
     column-gap: 60px;
     padding-top: 50px;
     margin-bottom: 50px;
 }
+
 .gallery {
     position: relative;
 }
