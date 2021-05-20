@@ -1,5 +1,5 @@
 // Fetching data for gallery
-fetch("https://www.rasbery.eu/buena--onda/wp-json/wp/v2/media")
+fetch("https://www.rasbery.eu/buena--onda/wp-json/wp/v2/media?per_page=100")
     .then(function (response) {
         return response.json()
     })
