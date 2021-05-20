@@ -18,6 +18,14 @@
     }
 }
 
+#bg_video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
 .intro_wrapper{
     position: absolute;
     top: 50%;
@@ -29,7 +37,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(255, 255, 255, 0.70);
+    background-color: #ffffff/*rgba(255, 255, 255, 0.70)*/;
     padding: 30px;
     width: 600px;
 
