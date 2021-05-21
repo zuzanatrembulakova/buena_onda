@@ -67,6 +67,26 @@ body{
     background-image: url(../images/home-sea/sea-back-01.svg);
 }
 
+.scroll_down_btn{
+    position: fixed;
+    top: 50%;
+    right: 20%;
+    transform: translate(-50%, -20%);
+    display: flex;
+    flex-direction: column;
+    z-index: 2000;
+}
+.scroll_down_btn img{
+    width: 40px;
+    margin: 5px;
+}
+.arrow_up, .arrow_down{
+    cursor: pointer;
+}
+.arrow_up{
+    transform: rotate(180deg);
+}
+
 .product_wrapper{
     position: absolute;
     margin-left: auto;

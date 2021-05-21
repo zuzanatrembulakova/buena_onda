@@ -37,6 +37,20 @@ document.onkeydown = function (e) {
     }
 };
 
+function moveSceneUp(){
+    currentSpeed -= 3;
+    if (moveAnimationIsRunning == false) {
+        moveScene();
+    }
+}
+
+function moveSceneDown(){
+    currentSpeed += 3;
+    if (moveAnimationIsRunning == false) {
+        moveScene();
+    }
+}
+
 window.addEventListener('wheel', function (e) {
 
     currentSpeed += e.deltaY/1000;
