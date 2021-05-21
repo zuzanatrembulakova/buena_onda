@@ -179,7 +179,7 @@ section a:hover {
     color: #000;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn, .dropdown_content a, .dropdown2lvl .dropbtn2lvl {
     font-size: 17px;
     border: none;
     outline: none;
@@ -190,12 +190,20 @@ section a:hover {
     margin: 0;
 }
 
-.dropdown_content {
+.dropdown_content{
     display: none;
     position: fixed;
     background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10000;
+}
+
+.dropdown_content2lvl {
+    display: none;
+    background-color: #fff;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     z-index: 10000;
 }
 .dropdown_content a{
@@ -213,6 +221,10 @@ section a:hover {
     background-color: #3993fa;
 }
 
+.dropdown button.dropbtn{
+    cursor: auto;
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -222,7 +234,23 @@ section a:hover {
     cursor: pointer;
 }
 
-.dropdown:hover .dropdown_content {
+.dropdown_content a.secondlvl {
+    display:none;
+}
+
+.dropdown2lvl{
+    display: flex;
+    align-items: flex-start;
+    /*position:relative;*/
+}
+
+/*.dropdown_content2lvl{
+    position: absolute;
+    left: 50%;
+    z-index: 6000000;
+}*/
+
+.dropdown:hover .dropdown_content, .dropdown2lvl:hover .dropdown_content2lvl, .products:hover .secondlvl{
     display: block;
 }
 
