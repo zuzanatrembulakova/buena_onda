@@ -1,5 +1,5 @@
 // Fetching data for gallery
-fetch("https://www.rasbery.eu/buena--onda/wp-json/wp/v2/media?per_page=100")
+fetch("https://www.rasbery.eu/buena--onda/wp-json/wp/v2/image?per_page=100")
     .then(function (response) {
         return response.json()
     })
@@ -19,7 +19,7 @@ function showGallery(oneImg) {
     const template = document.querySelector("#gallery_templ").content;
     const clone = template.cloneNode(true);
 
-    clone.querySelector("img").src = oneImg.guid.rendered;
+    clone.querySelector("img").src = oneImg.image.guid;
 
     document.querySelector("main").appendChild(clone);
 }
