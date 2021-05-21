@@ -2,9 +2,12 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 const viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+const viewport_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 window.onscroll = function () {
-    stickybar(document.URL.includes("index.html"));
+    if(viewport_width > 1020){
+         stickybar(document.URL.includes("index.html"));
+    }
 
     if (document.getElementById("topBtn")) {
         scrollFunction();
