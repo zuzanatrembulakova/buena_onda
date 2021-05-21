@@ -142,9 +142,9 @@ function place_product_div(item, angle) {
     item.style.zIndex = "" + Math.floor(zx);
 
     var itemOpacity = 1.0;
-    if (angle > 140 && angle < 180) {
-        itemOpacity = (angle - 140) / 40.0;
-    } else if (angle < 140 && angle > 90) {
+    if (angle > 200 && angle < 250) {
+        itemOpacity = (angle -  200) / 30.0;
+    } else if (angle < 200 && angle > 90) {
         itemOpacity = 0.0;
     }
     item.style.opacity = "" + itemOpacity;
