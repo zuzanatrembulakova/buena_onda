@@ -127,4 +127,32 @@ body{
     }
 }
 
+@media screen and (max-width: 1025px) {
+    .product_img{
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 690px){
+    body{
+      overflow: none;
+    }
+
+    .scroll_down_btn{
+        display: none;
+    }
+
+    .product_wrapper h1 {
+        font-size: 12px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .product_img{
+        width: 60%;
+    }
+}
+
+
 

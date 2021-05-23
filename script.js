@@ -19,14 +19,23 @@ window.onscroll = function () {
     check_and_add_fadein_animation("fadein", 1.5);
 }
 
+window.onload = function(){
+    check_and_add_fadein_animation("fadeinleft", 1.5);
+    check_and_add_fadein_animation("fadeinright", 1.5);
+    check_and_add_fadein_animation("fadeinbottom", 1.5);
+    check_and_add_fadein_animation("fadein", 1.5);
+}
+
 function check_and_add_fadein_animation(animationName, animationTime) {
 
     var elements = document.getElementsByClassName(animationName);
 
     for (i = 0; i < elements.length; i++) {
+        //position of element from the top of the page
         var offset = elements[i].offsetTop;
 
-        if (window.pageYOffset + viewport_height > offset) {
+        //if the element is about to be displayed - Y position of the page is near the element
+        if (window.pageYOffset + viewport_height > offset-10) {
             elements[i].style.animation = animationName + " " + animationTime + "s";
         }
     }
