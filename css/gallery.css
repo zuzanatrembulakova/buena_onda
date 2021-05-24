@@ -1,6 +1,6 @@
 main {
     margin: 0 10vmin;
-    column-count: 3;
+    column-count: 2;
     column-gap: 60px;
     padding-top: 50px;
     margin-bottom: 50px;
@@ -13,4 +13,10 @@ main {
     width: 100%;
     height: auto;
     margin-bottom: 55px;
+}
+
+@media screen and (max-width: 690px){
+    main{
+        column-count: 1;
+    }
 }
