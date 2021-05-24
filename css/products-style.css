@@ -67,6 +67,19 @@ body{
     background-image: url(../images/home-sea/sea-back-01.svg);
 }
 
+/*SCROLL*/
+
+.circle{
+    animation: scroll 2s ease-out 5;
+}
+
+@keyframes scroll {
+  0%   { transform: translateY(0); opacity: 1; }
+  25%  { opacity: 1; }
+  75%  { transform: translateY(.75em); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
 .scroll_down_btn{
     position: fixed;
     top: 50%;
@@ -76,10 +89,11 @@ body{
     flex-direction: column;
     z-index: 2000;
 }
-.scroll_down_btn img{
-    width: 40px;
+.scroll_down_btn img, svg{
+    width: 30px;
     margin: 5px;
 }
+
 .arrow_up, .arrow_down{
     cursor: pointer;
 }
