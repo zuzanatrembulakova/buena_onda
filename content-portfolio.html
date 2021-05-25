@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/content-portfolio.css">
+    <link rel="icon" type=image/png href="icons/logo.svg">
+    <title>#DressMeSlowly</title>
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="icons/logo.svg" alt="top"></button>
+
+    <nav class="topnav" id="navbar">
+
+        <div class="dropdown">
+            <button class="dropbtn">#DressMeSlowly
+
+                <label class="fa fa-caret-down">▾</label>
+            </button>
+            <div class="dropdown_content">
+                <a href="slow-fashion.html">About</a>
+                <a href="slow-fashion-tips.html">Tips</a>
+            </div>
+        </div>
+        <a href="index.html?page_type=nologo" class="logo_link">
+            <div class="nav_icon logo"></div>
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">Summer '21
+
+                <label class="fa fa-caret-down">▾</label>
+            </button>
+            <div class="dropdown_content">
+                <a href="products.html">Products</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="navbar_mobile">
+        <div class="menu_items_wrapper_mobile">
+            <a href='index.html?page_type=nologo' class="logo_mobile logo_mobile_home"><img src="icons/logo.svg" alt="logo"></a>
+            <input type="checkbox" id="menu_toggle">
+            <label for="menu_toggle" class="menu_open">
+                <div class="open"></div>
+            </label>
+
+            <div class="menu menu_effects">
+                <label for="menu_toggle"></label>
+                <div class="menu_content">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropDownFirst()">#DressMeSlowly
+                            <label class="fa fa-caret-down">▾</label>
+                        </button>
+                        <div class="dropdown_content1">
+                            <div class="dropdown_content_wrapper">
+                                <a href="slow-fashion.html">About</a>
+                                <a href="slow-fashion-tips.html">Tips</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropDownSecond()">Summer '21
+                            <label title="Toggle Drop-down" class="fa fa-caret-down">▾</label>
+                        </button>
+                        <div class="dropdown_content2">
+                            <div class="dropdown_content_wrapper">
+                                <a href="products.html">Products</a>
+                                <a href="gallery.html">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Content portfolio</h1>
+        <p class="team"><b>Team 7</b> – Sara Bertova | Zuzana Trembuláková</p>
+
+
+        <section class="promotional_videos">
+            <h2>Promotional video</h2>
+            <div class="long fadeinright">
+                <h3>Long</h3>
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/-rGjG1-uY90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="buper fadeinright">
+                <h3>Bumper</h3>
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/QODI155oVIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="cinemagraphs">
+            <h2>Cinemagraphs</h2>
+
+            <video autoplay loop muted class="explainer fadeinleft">
+                <source src="videos/buena-onda-cinemagraph-sit1.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay loop muted class="explainer fadeinleft">
+                <source src="videos/buena-onda-cinemagraph-walk.mp4" type="video/mp4">
+            </video>
+
+        </section>
+
+        <div class="line"></div>
+
+        <section class="explainer_wrapper">
+            <h2>Explainer</h2>
+
+            <video controls class="explainer fadeinright" poster="videos/explainer-thumbnail2.jpg">
+                <source src="videos/dress-me-slowly.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="email">
+            <h3>email</h3>
+            <a class="green_wave" href="mailto:hello@buena--onda.com">hello@buena--onda.com</a>
+        </section>
+
+        <section class="web">
+            <h3>web</h3>
+            <a class="green_wave" href="https://buena--onda.com/" target="_blank">buena--onda.com</a>
+        </section>
+
+        <section class="social">
+            <h3>social</h3>
+            <a href="https://www.instagram.com/buena_onda/" target="_blank" class="instagram"><img class="green_wave" src="icons/instagram-03.svg" alt="instagram"></a>
+        </section>
+
+        <section class="help">
+            <h3>help</h3>
+            <a class="green_wave" href="content-portfolio.html">privacy policy</a>
+        </section>
+
+        <section class="disclaimer">
+            <a href="content-portfolio.html"><h3 class="green_wave">contetn portfolio</h3></a>
+            <p>This website is made as a student project from the Multimedia Design Education at Copenhagen School of Design and Technology (KEA)</p>
+        </section>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

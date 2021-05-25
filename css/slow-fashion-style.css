@@ -45,8 +45,55 @@ article h3 {
     font-family: 'Archivo Black', sans-serif;
 }
 
+.slow_fashion_text{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+}
+.slow_fashion_text p{
+    margin: 20px;
+}
+.slow_fashion_text_img{
+    width: 70%;
+    margin: 20px auto;
+    filter: drop-shadow(5px 5px #3993fa);
+}
+
 .explainer {
     width: 500px;
     display: block;
     margin: 0 auto 50px auto;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px #3993fa);
 }
+
+@media screen and (max-width: 1020px){
+
+    article {
+        margin: 0px 10% 50px 10%;
+    }
+
+    .slow_fashion_text{
+        width: 100%;
+    }
+
+    .single_tip {
+        grid-template-columns: 1fr;
+    }
+    .single_tip > div{
+        margin-top: 10px;
+    }
+    .text_right{
+        grid-row: 2;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 690px){
+
+    .explainer{
+        width: 90%;
+    }
+}
+
