@@ -182,17 +182,23 @@
     }
 }*/
 
+@media screen and (max-width: 1300px){
+    .sea_front{
+        margin: -50px 0 0 0;
+    }
+    .white_waves{
+        margin: -70px 0 0 0;
+    }
+    .sea_wave{
+        margin: -130px 0 0 0;
+    }
+}
+
 @media screen and (max-width: 1020px){
     #bg_video{
         width: auto;
         height: auto;
         z-index: -100;
-    }
-    .white_waves, .sea_front{
-        margin: -70px 0 0 0;
-    }
-    .sea_wave{
-        margin: -130px 0 0 0;
     }
 }
 
