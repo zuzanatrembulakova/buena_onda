@@ -159,7 +159,7 @@ section a:hover {
 
 /*MENU*/
 #navbar {
-    z-index: 100;
+    z-index: 1000;
 }
 
 .topnav {
@@ -196,7 +196,6 @@ section a:hover {
     background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10000;
 }
 
 .dropdown_content2lvl {
