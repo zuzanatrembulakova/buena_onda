@@ -85,6 +85,10 @@ section a:hover {
     transition: .5s;
 }
 
+#topBtn:hover {
+    transform: rotate(30deg);
+}
+
 .btn {
     font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
@@ -102,6 +106,12 @@ section a:hover {
     color: #3993FA;
     font-weight: 400;
 }
+
+.btn_white {
+    border-color: #fff;
+    color: #fff;
+}
+
 .btn span {
     cursor: pointer;
     display: inline-block;

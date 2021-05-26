@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buena Onda is a slow fashion summer brand creating premium items. The new collection '21 is now available. Shop for a backpack, skateboard and money clip.">
+    <meta name="keywords" content="slow fashion, Buena Onda, summer, backpack, skateboard, money clip">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home-style.css">
     <link rel="icon" type=image/png href="icons/logo.svg">
-    <title>Buena Onda - summer '21</title>
+    <title>Buena Onda - summer '21 x slow fashion </title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WTLE2GZZF"></script>
@@ -120,42 +122,59 @@
         <div class="sea_wave"></div>
 
         <div class="under_sea">
-         <section><h1>Summer '21 x Slow fashion</h1></section>
+            <section class="products">
+                <h1>Summer '21 x Slow fashion</h1>
+                <img class="skateboard" onmouseover="onHover();" onmouseout="offHover();" src="images/home-products/summer-x-slow-fashion.jpg" alt="slow fashion">
 
 
-          <section class="dressmeslowly">
+                <!--<div>
+                    <div class="money-clip">
+                    <h2>WAVE~PACK</h2>
+                    <p></p>
+                    <img class="clip" src="images/home-products/BUENA-ONDA-Retoro-Money-Clip.jpg" onmouseover="clipOnHover();" onmouseout="clipOffHover();" alt="money clip"></div>
 
-              <video autoplay loop muted class="fadeinleft">
-                <source src="videos/buena-onda_slow-fashion.mp4" type="video/mp4">
-            </video>
-            <div>
-            <h1>Dress Me Slowly</h1>
-            <p>Slow fashion, you guessed it correctly, is the negation to fast fashion. This sustainable concept focuses on 'slowing down' the processes in the industry. Such brands release fewer collections, which reflects in the substantial decrease in waste production, increase in the quality, and improvement of the working conditions. Slow fashion aims to preserve the craft and environment and, most importantly, provide value.</p>
-              </div>
-          </section>
-
-
-           <section>
-            <h1>Buena Onda presents to you</h1>
-            <div class="three_icons">
-
-                <div class="scandinavia">
-                    <img src="icons/scandinavia-01.svg">
-                    <p>Scandinavian simplicity of classic & clean</p>
-
+                    <img class="backpack" onmouseover="packOnHover();" onmouseout="packOffHover();" src="images/home-products/buena-onda-summer-vol-3_wave-pack.jpg" alt="backpack">
                 </div>
 
-                <div class="japan">
-                    <img src="icons/japan-01.svg">
-                    <p>Japanese design ethics of slow and thoughtful processes</p>
-                </div>
+                <img class="skateboard" onmouseover="skateOnHover();" onmouseout="skateOffHover();" src="images/home-products/buena-onda-kaiyo-cruiser-front.jpg">-->
+            </section>
 
-                <div class="california">
-                    <img src="icons/california-01.svg">
-                    <p>The feel of a fresh California summer</p>
-                </div>
+            <section class="dressmeslowly">
 
-            </div>
+                <video autoplay loop muted class="fadeinleft">
+                    <source src="videos/buena-onda_slow-fashion.mp4" type="video/mp4">
+                </video>
+                <div>
+                    <h1>Dress Me Slowly</h1>
+                    <p>Slow fashion, you guessed it correctly, is the negation to fast fashion. This sustainable concept focuses on 'slowing down' the processes in the industry. Such brands release fewer collections, which reflects in the substantial decrease in waste production, increase in the quality, and improvement of the working conditions. Slow fashion aims to preserve the craft and environment and, most importantly, provide value.</p>
+                    <a href="slow-fashion.html">
+                        <div class="btn btn_white"><span>learn more</span></div>
+                    </a>
+                </div>
+            </section>
+
+
+            <section>
+                <h1>Buena Onda presents to you</h1>
+                <div class="three_icons">
+
+                    <div class="scandinavia">
+                        <img src="icons/scandinavia-01.svg">
+                        <p>Scandinavian simplicity of classic & clean</p>
+
+                    </div>
+
+                    <div class="japan">
+                        <img src="icons/japan-01.svg">
+                        <p>Japanese design ethics of slow and thoughtful processes</p>
+                    </div>
+
+                    <div class="california">
+                        <img src="icons/california-01.svg">
+                        <p>The feel of a fresh California summer</p>
+                    </div>
+
+                </div>
             </section>
 
             <!--<div class="bubbles_wrapper">
@@ -193,7 +212,9 @@
         </section>
 
         <section class="disclaimer">
-            <a href="content-portfolio.html"><h3 class="green_wave">content portfolio</h3></a>
+            <a href="content-portfolio.html">
+                <h3 class="green_wave">content portfolio</h3>
+            </a>
             <p>This website is made as a student project from the Multimedia Design Education at Copenhagen School of Design and Technology (KEA)</p>
         </section>
 
@@ -203,15 +224,31 @@
     <script src="script.js"></script>
     <script src="script/home-script.js"></script>
 
-<script>
-    !function(){var i,e,t,s=window.legal=window.legal||[];if(s.SNIPPET_VERSION="3.0.0",i="https://widgets.legalmonster.com/v1/legal.js",!s.__VERSION__)if(s.invoked)window.console&&console.info&&console.info("legal.js: The initialisation snippet is included more than once on this page, and does not need to be.");else{for(s.invoked=!0,s.methods=["cookieConsent","document","ensureConsent","handleWidget","signup","user"],s.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(t),s.push(e),s}},e=0;e<s.methods.length;e++)t=s.methods[e],s[t]=s.factory(t);s.load=function(e,t){var n,o=document.createElement("script");o.setAttribute("data-legalmonster","sven"),o.type="text/javascript",o.async=!0,o.src=i,(n=document.getElementsByTagName("script")[0]).parentNode.insertBefore(o,n),s.__project=e,s.__loadOptions=t||{}},s.widget=function(e){s.__project||s.load(e.widgetPublicKey),s.handleWidget(e)}}}();
+    <script>
+        ! function() {
+            var i, e, t, s = window.legal = window.legal || [];
+            if (s.SNIPPET_VERSION = "3.0.0", i = "https://widgets.legalmonster.com/v1/legal.js", !s.__VERSION__)
+                if (s.invoked) window.console && console.info && console.info("legal.js: The initialisation snippet is included more than once on this page, and does not need to be.");
+                else {
+                    for (s.invoked = !0, s.methods = ["cookieConsent", "document", "ensureConsent", "handleWidget", "signup", "user"], s.factory = function(t) {
+                            return function() {
+                                var e = Array.prototype.slice.call(arguments);
+                                return e.unshift(t), s.push(e), s
+                            }
+                        }, e = 0; e < s.methods.length; e++) t = s.methods[e], s[t] = s.factory(t);
+                    s.load = function(e, t) {
+                        var n, o = document.createElement("script");
+                        o.setAttribute("data-legalmonster", "sven"), o.type = "text/javascript", o.async = !0, o.src = i, (n = document.getElementsByTagName("script")[0]).parentNode.insertBefore(o, n), s.__project = e, s.__loadOptions = t || {}
+                    }, s.widget = function(e) {
+                        s.__project || s.load(e.widgetPublicKey), s.handleWidget(e)
+                    }
+                }
+        }();
 
-    legal.widget({
-        type: "cookie",
-        widgetPublicKey: "BCkH4HE2mds3CvsYPgwa3pKc",
-    });
-</script>
+        legal.widget({
+            type: "cookie",
+            widgetPublicKey: "BCkH4HE2mds3CvsYPgwa3pKc",
+        });
+    </script>
 
-</body>
-
-</html>
+</body></html>

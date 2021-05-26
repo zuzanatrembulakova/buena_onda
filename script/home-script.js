@@ -22,7 +22,18 @@ var whiteWaves = document.querySelector('.white_waves');
 document.addEventListener('scroll', function (e) {
     var posY = window.scrollY;
 
-    whiteWaves.style.transform = "translateY(" + (-posY*.85) + "px)";
-    seaFront.style.transform = "translateY(" + (-posY*.75) + "px)";
+    whiteWaves.style.transform = "translateY(" + (-posY * .85) + "px)";
+    seaFront.style.transform = "translateY(" + (-posY * .75) + "px)";
 
 });
+
+
+function onHover() {
+    document.querySelector(".skateboard").src = "images/home-products/slow-fashion3.jpg";
+    document.querySelector(".sea").src = "images/home-products/homepage1.jpg";
+}
+
+function offHover() {
+    document.querySelector(".skateboard").src = "images/home-products/homepage1.jpg";
+    document.querySelector(".sea").src = "images/home-products/slow-fashion3.jpg";
+}
