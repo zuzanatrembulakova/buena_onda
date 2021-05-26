@@ -1,4 +1,4 @@
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -6,6 +6,7 @@ h1 {
     font-size: 37px;
     text-align: center;
 }
+
 .team {
     margin: 20px;
     font-size: 18px;
@@ -19,29 +20,36 @@ main > section {
     margin: auto;
 }
 
-section > h2{
+section > h2 {
     margin: 50px auto 40px auto;
 }
 
-.line{
+.line {
     border-bottom: solid 1px #3993FA;
     width: 85%;
     margin: 20px auto 50px auto;
 }
 
-.promotional_videos{
+.promotional_videos {
     margin-bottom: 70px;
 }
-.promotional_videos, .cinemagraphs{
+
+.promotional_videos,
+.cinemagraphs,
+.logo_animations {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
     justify-items: center;
 }
-.promotional_videos h2, .cinemagraphs h2{
+
+.promotional_videos h2,
+.cinemagraphs h2,
+.logo_animations h2 {
     grid-column: 1 / -1;
     grid-row: 1;
 }
+
 .promotional_videos h3 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -49,65 +57,81 @@ section > h2{
     color: #707070;
 }
 
-.cinemagraphs, .promotional_videos{
+.cinemagraphs,
+.promotional_videos,
+.logo_animations {
     justify-content: center;
 }
 
-iframe{
+iframe {
     filter: drop-shadow(5px 5px #3993fa);
 }
 
-.explainer_wrapper{
+.explainer_wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 50px;
 }
-.explainer, .cinemagraphs > video {
+
+.explainer,
+.cinemagraphs > video,
+.logo_animations > video {
     width: 500px;
     display: block;
     margin: 0 auto 50px auto;
     filter: drop-shadow(5px 5px #3993fa);
 }
-.explainer{
+
+.explainer {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1020px){
 
+.logo_animations > video {
+    filter: drop-shadow(5px 5px #9cffcf);
 }
 
-@media screen and (max-width: 690px){
+.logo_animations {
+    margin-bottom: 100px;
+}
 
-    iframe{
+@media screen and (max-width: 1020px) {}
+
+@media screen and (max-width: 690px) {
+
+    iframe {
         width: 100%;
         margin-bottom: 40px;
     }
-    .cinemagraphs > video{
+
+    .cinemagraphs > video {
         width: 50%;
     }
-    .explainer{
+
+    .explainer {
         width: 80%;
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
 
-    h1{
+    h1 {
         width: 230px;
         font-size: 20px;
         text-align: center;
         margin: auto;
     }
 
-    .promotional_videos{
+    .promotional_videos {
         width: 250px;
     }
 
-    iframe, .cinemagraphs > video, section h2{
+    iframe,
+    .cinemagraphs > video,
+    section h2 {
         width: 230px;
     }
 
-    section h2{
+    section h2 {
         font-size: 18px;
     }
 }
