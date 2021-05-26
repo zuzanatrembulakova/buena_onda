@@ -103,7 +103,8 @@ iframe {
         margin-bottom: 40px;
     }
 
-    .cinemagraphs > video {
+    .cinemagraphs > video,
+    .logo_animations > video {
         width: 50%;
     }
 
@@ -127,6 +128,7 @@ iframe {
 
     iframe,
     .cinemagraphs > video,
+    .logo_animations > video,
     section h2 {
         width: 230px;
     }
