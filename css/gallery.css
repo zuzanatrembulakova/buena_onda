@@ -15,6 +15,10 @@ main {
     margin-bottom: 55px;
 }
 
+.frame {
+    filter: drop-shadow(15px 15px #9cffcf);
+}
+
 @media screen and (max-width: 690px){
     main{
         column-count: 1;
