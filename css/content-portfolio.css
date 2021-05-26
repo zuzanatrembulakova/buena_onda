@@ -49,6 +49,10 @@ section > h2{
     color: #707070;
 }
 
+.cinemagraphs, .promotional_videos{
+    justify-content: center;
+}
+
 iframe{
     filter: drop-shadow(5px 5px #3993fa);
 }
@@ -74,7 +78,36 @@ iframe{
 
 @media screen and (max-width: 690px){
 
+    iframe{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .cinemagraphs > video{
+        width: 50%;
+    }
     .explainer{
-        width: 90%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 290px){
+
+    h1{
+        width: 230px;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .promotional_videos{
+        width: 250px;
+    }
+
+    iframe, .cinemagraphs > video, section h2{
+        width: 230px;
+    }
+
+    section h2{
+        font-size: 18px;
     }
 }

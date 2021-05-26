@@ -97,3 +97,12 @@ article h3 {
     }
 }
 
+@media screen and (max-width: 290px){
+
+    article h1 {
+        width: 230px;
+        font-size: 20px;
+    }
+
+}
+
