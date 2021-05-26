@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/ripple-style.css">
+    <link rel="stylesheet" href="css/privacy-policy.css">
     <link rel="icon" type=image/png href="icons/logo.svg">
-    <title>Buena Onda - summer '21</title>
+    <title>#DressMeSlowly</title>
 </head>
 
 <body>
@@ -19,7 +18,8 @@
 
         <div class="dropdown">
             <button class="dropbtn">#DressMeSlowly
-                <label>▾</label>
+
+                <label class="fa fa-caret-down">▾</label>
             </button>
             <div class="dropdown_content">
                 <a href="slow-fashion.html">About</a>
@@ -31,7 +31,8 @@
         </a>
         <div class="dropdown">
             <button class="dropbtn">Summer '21
-                <label>▾</label>
+
+                <label class="fa fa-caret-down">▾</label>
             </button>
             <div class="dropdown_content">
                 <a href="products.html">Products</a>
@@ -53,7 +54,7 @@
                 <div class="menu_content">
                     <div class="dropdown">
                         <button class="dropbtn" onclick="dropDownFirst()">#DressMeSlowly
-                            <label>▾</label>
+                            <label class="fa fa-caret-down">▾</label>
                         </button>
                         <div class="dropdown_content1">
                             <div class="dropdown_content_wrapper">
@@ -64,7 +65,7 @@
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn" onclick="dropDownSecond()">Summer '21
-                            <label>▾</label>
+                            <label title="Toggle Drop-down" class="fa fa-caret-down">▾</label>
                         </button>
                         <div class="dropdown_content2">
                             <div class="dropdown_content_wrapper">
@@ -79,14 +80,24 @@
     </nav>
 
     <main>
+        <h1>Privacy policy</h1>
+
+        <article>
+            <h3>Who we are</h3>
+            <p>Our website address is: <a class="wave" href="https://zuzka.dk/buena-onda/">https://zuzka.dk/buena-onda/</a></p>
+
+            <h3>Embedded content from other websites</h3>
+            <p> Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
+
+            <p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>
+
+            <h3>What rights you have over your data</h3>
+            <p>You can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>
+
+        </article>
+
 
     </main>
-
-    <template id="gallery_templ" class="banner">
-        <div class="gallery">
-            <img src="" id="gallery_img">
-        </div>
-    </template>
 
     <footer>
 
@@ -111,7 +122,9 @@
         </section>
 
         <section class="disclaimer">
-            <a href="content-portfolio.html"><h3 class="green_wave">content portfolio</h3></a>
+            <a href="content-portfolio.html">
+                <h3 class="green_wave">content portfolio</h3>
+            </a>
             <p>This website is made as a student project from the Multimedia Design Education at Copenhagen School of Design and Technology (KEA)</p>
         </section>
 
@@ -119,8 +132,7 @@
 
 
     <script src="script.js"></script>
-    <script src="script/gallery-script.js"></script>
-    <script src="script/ripple/jquery-3.1.1.min.js"></script>
-    <script src="script/ripple/jquery.ripples.js"></script>
-    <script src="script/ripple/ripple-script.js"></script>
-</body></html>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+main{
+    margin-bottom: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+article {
+    margin: 50px 20% 50px 20%;
+}
+
+article h3 {
+    color: #707070;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+}
+
+article p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}

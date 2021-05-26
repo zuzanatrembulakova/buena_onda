@@ -52,25 +52,20 @@ section > h2{
 iframe{
     filter: drop-shadow(5px 5px #3993fa);
 }
-/*.cinemagraphs > video{
-    width: 500px;
-    display: block;
-    margin: 0 auto 50px auto;
-    cursor: pointer;
-    filter: drop-shadow(5px 5px #9cffcf);
-}*/
 
 .explainer_wrapper{
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 50px;
 }
-.explainer {
+.explainer, .cinemagraphs > video {
     width: 500px;
     display: block;
     margin: 0 auto 50px auto;
-    cursor: pointer;
     filter: drop-shadow(5px 5px #3993fa);
+}
+.explainer{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1020px){
