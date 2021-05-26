@@ -97,7 +97,7 @@ article h3 {
     }
 }
 
-@media screen and (max-width: 290px){
+@media screen and (max-width: 380px){
 
     article h1 {
         width: 230px;

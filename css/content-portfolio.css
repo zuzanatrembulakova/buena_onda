@@ -90,7 +90,7 @@ iframe{
     }
 }
 
-@media screen and (max-width: 290px){
+@media screen and (max-width: 380px){
 
     h1{
         width: 230px;
