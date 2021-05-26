@@ -26,6 +26,7 @@
     min-height: 100%;
     z-index: -100;
 }
+
 .intro_wrapper{
     position: absolute;
     top: 40%;
@@ -105,10 +106,36 @@
 }
 
 .under_sea h1{
-    color: white;
+    color: #fff;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
+
+.dressmeslowly h1{
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.under_sea p{
+    color: #fff;
+}
+
+.dressmeslowly{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 50px auto 150px auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dressmeslowly video{
+    width: 80%;
+    filter: drop-shadow(5px 5px #fff);
+}
+
 
 .three_icons{
     display: grid;
