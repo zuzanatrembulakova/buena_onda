@@ -252,6 +252,18 @@ section a:hover {
 
 .dropdown:hover .dropdown_content, .dropdown2lvl:hover .dropdown_content2lvl, .products:hover .secondlvl{
     display: block;
+    animation: showDropDownContent .3s ease-out;
+}
+
+@keyframes showDropDownContent{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+       transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .dropdown_content2, .dropdown_content1{
