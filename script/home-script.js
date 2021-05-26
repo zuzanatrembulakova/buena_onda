@@ -29,11 +29,9 @@ document.addEventListener('scroll', function (e) {
 
 
 function onHover() {
-    document.querySelector(".skateboard").src = "images/home-products/slow-fashion3.jpg";
-    document.querySelector(".sea").src = "images/home-products/homepage1.jpg";
+    document.querySelector(".summerxslowfashion").src = "images/home-products/summer-x-slow-fashion2.jpg";
 }
 
 function offHover() {
-    document.querySelector(".skateboard").src = "images/home-products/homepage1.jpg";
-    document.querySelector(".sea").src = "images/home-products/slow-fashion3.jpg";
+    document.querySelector(".summerxslowfashion").src = "images/home-products/summer-x-slow-fashion.jpg";
 }

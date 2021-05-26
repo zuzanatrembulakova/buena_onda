@@ -1,4 +1,4 @@
-#preload{
+#preload {
     z-index: 10001;
     position: fixed;
     top: 0;
@@ -9,16 +9,18 @@
     align-items: center;
     animation: preloadFadeOut 1s ease 2s;
 }
-@keyframes preloadFadeOut{
-    from{
+
+@keyframes preloadFadeOut {
+    from {
         opacity: 1;
     }
-    to{
+
+    to {
         opacity: 0;
     }
 }
 
-#bg_video{
+#bg_video {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -27,7 +29,7 @@
     z-index: -100;
 }
 
-.intro_wrapper{
+.intro_wrapper {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -47,7 +49,8 @@
 
     animation: bounce 1.5s infinite;
 }
-.intro_wrapper::before{
+
+.intro_wrapper::before {
     z-index: -2;
     content: '';
     border: 0.5px solid #000000;
@@ -59,20 +62,22 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
 }
+
 @keyframes bounce {
-  50% {
-    transform: translate(-50%, -42%);
-  }
+    50% {
+        transform: translate(-50%, -42%);
+    }
 }
 
-.intro_title{
+.intro_title {
     text-align: center;
     width: 80%;
     line-height: 30px;
     color: #3993FA;
 }
 
-.white_waves, .sea_front{
+.white_waves,
+.sea_front {
     width: 100%;
     height: 700px;
     background-size: cover;
@@ -82,15 +87,17 @@
     z-index: -10;
 }
 
-.white_waves{
+.white_waves {
     background-image: url(../images/home-sea/white_waves-01.svg);
     height: 929px;
 }
-.sea_front{
+
+.sea_front {
     background-image: url(../images/home-sea/sea_front-01.svg);
     height: 929px;
 }
-.sea_wave{
+
+.sea_wave {
     width: 100%;
     height: 700px;
     background-size: cover;
@@ -98,14 +105,14 @@
     background-image: url(../images/home-sea/sea_wave-01.svg);
 }
 
-.under_sea{
+.under_sea {
     background-color: #3993FA;
     width: 100%;
     padding: 50px 0;
     margin-top: -20px;
 }
 
-.under_sea h1{
+.under_sea h1 {
     color: #fff;
     text-align: center;
     margin-bottom: 50px;
@@ -115,47 +122,27 @@
     color: #fff;
 }
 
-.under_sea p{
+.under_sea p {
     color: #fff;
 }
 
-.summerxslowfashion{
-    display:flex;
+/*.summerxslowfashion {
+    display: flex;
     flex-flow: column;
-}
-
-.products img{
-    width: 55%;
-    filter: drop-shadow(5px 5px #fff);
-    margin: 20px;
-}
+}*/
 
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.products div {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: 50px auto 150px auto;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.products h1{
-    grid-column: 1/3;
-}
-
-.dressmeslowly h1{
+.dressmeslowly h1, .products h1 {
     color: #fff;
     margin-bottom: 10px;
     text-align: left;
 }
 
-.dressmeslowly{
+.dressmeslowly, .products {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 70%;
@@ -165,25 +152,32 @@
 
 }
 
-.dressmeslowly video{
+.products img {
+    margin-left: auto;
+}
+
+.dressmeslowly video, .products img {
     width: 80%;
     filter: drop-shadow(5px 5px #fff);
 }
 
 
-.three_icons{
+.three_icons {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    ;
     justify-items: center;
     justify-content: center;
     width: 80%;
     margin: 0px auto 100px auto;
 }
-.three_icons div{
+
+.three_icons div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .three_icons div p {
     text-align: center;
     color: #ffffff;
@@ -191,7 +185,8 @@
     /*letter-spacing: 2px;*/
     width: 80%;
 }
-.three_icons img{
+
+.three_icons img {
     width: 200px;
 }
 
@@ -243,32 +238,34 @@
     }
 }*/
 
-@media screen and (max-width: 1300px){
-    .sea_front{
+@media screen and (max-width: 1300px) {
+    .sea_front {
         margin: -50px 0 0 0;
     }
-    .white_waves{
+
+    .white_waves {
         margin: -70px 0 0 0;
     }
-    .sea_wave{
+
+    .sea_wave {
         margin: -130px 0 0 0;
     }
 }
 
-@media screen and (max-width: 1020px){
-    #bg_video{
+@media screen and (max-width: 1020px) {
+    #bg_video {
         width: auto;
         height: auto;
         z-index: -100;
     }
 }
 
-@media screen and (max-width: 690px){
-    .intro_wrapper{
+@media screen and (max-width: 690px) {
+    .intro_wrapper {
         width: 90%;
     }
 
-    .three_icons div{
+    .three_icons div {
         margin: 30px;
     }
 }
