@@ -12,13 +12,19 @@ article p {
 article h1 {
     font-size: 37px;
     text-align: center;
+    /*margin-top: 50px;*/
 }
+
 article h2 {
     color: #707070;
     text-align: center;
     margin-top: 15px;
-    margin-bottom: 50px;
+    /*margin-bottom: 40px;*/
 }
+/*
+.tips h1 {
+    margin-bottom: 60px;
+}*/
 
 .single_tip {
     margin: 20px auto 130px auto;

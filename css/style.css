@@ -109,6 +109,9 @@ section a:hover {
 
 .btn_white {
     border-color: #fff;
+}
+
+.btn_white a {
     color: #fff;
 }
 
