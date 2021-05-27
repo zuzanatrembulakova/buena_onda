@@ -1,9 +1,8 @@
 main {
-    margin: 0 10vmin;
+    margin: 50px 10vmin 80px;
     column-count: 2;
     column-gap: 60px;
     padding-top: 50px;
-    margin-bottom: 80px;
 }
 
 .gallery {
