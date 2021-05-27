@@ -1,3 +1,11 @@
+body{
+    overflow-x: hidden;
+}
+
+.main_stycky_home{
+    margin-top: 100px;
+}
+
 #preload {
     z-index: 10001;
     position: fixed;

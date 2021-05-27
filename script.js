@@ -4,9 +4,13 @@ var sticky = navbar.offsetTop;
 const viewport_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 const viewport_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
+var documentUrl = document.URL;
+
+console.log(documentUrl);
+
 window.onscroll = function () {
-    if(viewport_width > 1020){
-         stickybar(document.URL.includes("index.html"));
+    if (viewport_width > 1020) {
+        stickybar(documentUrl.includes("index.html"));
     }
 
     if (document.getElementById("topBtn")) {
@@ -19,7 +23,7 @@ window.onscroll = function () {
     check_and_add_fadein_animation("fadein", 1.5);
 }
 
-window.onload = function(){
+window.onload = function () {
     check_and_add_fadein_animation("fadeinleft", 1.5);
     check_and_add_fadein_animation("fadeinright", 1.5);
     check_and_add_fadein_animation("fadeinbottom", 1.5);
@@ -35,7 +39,7 @@ function check_and_add_fadein_animation(animationName, animationTime) {
         var offset = elements[i].offsetTop;
 
         //if the element is about to be displayed - Y position of the page is near the element
-        if (window.pageYOffset + viewport_height > offset-10) {
+        if (window.pageYOffset + viewport_height > offset - 10) {
             elements[i].style.animation = animationName + " " + animationTime + "s";
         }
     }
@@ -48,7 +52,12 @@ var prevScrollpos = window.pageYOffset;
 function stickybar() {
 
     navbar.classList.add("sticky");
-    document.getElementsByTagName("main")[0].classList.add("main_sticky");
+
+    if (!documentUrl.includes("index.html")) {
+        document.getElementsByTagName("main")[0].classList.add("main_sticky");
+    } else {
+        document.getElementsByTagName("main")[0].classList.add("main_stycky_home");
+    }
 
     var currentScrollPos = window.pageYOffset;
 
