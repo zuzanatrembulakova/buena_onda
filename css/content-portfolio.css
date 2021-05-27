@@ -16,6 +16,7 @@ h1 {
     font-family: 'Century Gothic', sans-serif;
 }
 
+
 main > section {
     text-align: center;
     margin: auto;
@@ -66,6 +67,8 @@ section > h2 {
 
 iframe {
     filter: drop-shadow(5px 5px #3993fa);
+    width: 480px;
+    height: 270px;
 }
 
 .explainer_wrapper {
@@ -95,13 +98,17 @@ iframe {
     margin-bottom: 100px;
 }
 
-@media screen and (max-width: 1020px) {}
+@media screen and (max-width: 1350px) {
+     iframe {
+        margin-bottom: 40px;
+    }
+}
 
 @media screen and (max-width: 690px) {
 
     iframe {
         width: 100%;
-        margin-bottom: 40px;
+        height: auto;
     }
 
     .cinemagraphs > video,

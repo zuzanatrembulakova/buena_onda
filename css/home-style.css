@@ -120,7 +120,8 @@ body{
     margin-top: -20px;
 }
 
-.under_sea h1 {
+
+.three_icons_title {
     color: #fff;
     text-align: center;
     margin-bottom: 50px;
@@ -144,7 +145,7 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
-.dressmeslowly h1, .products h1 {
+.dressmeslowly h2, .products h2 {
     color: #fff;
     margin-bottom: 10px;
     text-align: left;

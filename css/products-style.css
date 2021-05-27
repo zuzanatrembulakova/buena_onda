@@ -159,7 +159,7 @@ svg {
 
 @media screen and (max-width: 690px) {
     body {
-        overflow: none;
+        overflow: hidden;
     }
 
     #mouse {

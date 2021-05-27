@@ -100,6 +100,11 @@ header, .swatches_wrapper, .adjectives_wrapper{
     width: 50px;
     height: 50px;
     transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.topBtn:hover {
+    transform: rotate(30deg);
 }
 
 .btn {
@@ -185,6 +190,10 @@ header, .swatches_wrapper, .adjectives_wrapper{
 .pattern_wrapper img{
     width: 150px;
     height: 150px;
+}
+
+.pattern_wrapper img:last-child {
+    filter: drop-shadow(5px 5px #3993FA);
 }
 
 .font_details{
