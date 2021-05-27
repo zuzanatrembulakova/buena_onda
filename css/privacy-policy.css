@@ -4,10 +4,13 @@ main{
 
 h1{
     text-align: center;
+    font-size: 37px;
+    margin-top: 50px;
 }
 
 article {
-    margin: 50px 20%;
+    margin: 30px 20%;
+    margin-bottom: 100px;
 }
 
 article h3 {
@@ -17,7 +20,7 @@ article h3 {
 }
 
 article p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 18px;
 }
 
@@ -32,12 +35,12 @@ article p {
 
     h1{
         width: 230px;
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
-        margin: auto;
+        margin: 50px auto 0;
     }
 
     article h3{
-        font-size: 18px;
+        font-size: 16px;
     }
 }

@@ -2,7 +2,7 @@ body{
     overflow-x: hidden;
 }
 
-.main_stycky_home{
+.main_sticky_home{
     margin-top: 100px;
 }
 
@@ -116,7 +116,7 @@ body{
 .under_sea {
     background-color: #3993FA;
     width: 100%;
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
     margin-top: -20px;
 }
 
@@ -154,7 +154,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 70%;
-    margin: 50px auto 150px auto;
+    margin: 0 auto 150px auto;
     justify-content: center;
     align-items: center;
 
@@ -266,6 +266,26 @@ body{
         height: auto;
         z-index: -100;
     }
+
+    .products, .dressmeslowly {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    .summerxslowfashion {
+        grid-row: 1;
+    }
+
+    .products img, .dressmeslowly video {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .products p, .dressmeslowly p:last-child{
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (max-width: 690px) {
@@ -275,5 +295,14 @@ body{
 
     .three_icons div {
         margin: 30px;
+    }
+
+    .intro_title {
+        font-size: 20px;
+    }
+
+    .three_icons_title {
+        width: 95%;
+        margin: auto;
     }
 }

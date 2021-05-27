@@ -53,10 +53,10 @@ function stickybar() {
 
     navbar.classList.add("sticky");
 
-    if (!documentUrl.includes("index.html")) {
-        document.getElementsByTagName("main")[0].classList.add("main_sticky");
+    if (documentUrl.includes("index.html")) {
+        document.getElementsByTagName("main")[0].classList.add("main_sticky_home");
     } else {
-        document.getElementsByTagName("main")[0].classList.add("main_stycky_home");
+        document.getElementsByTagName("main")[0].classList.add("main_sticky");
     }
 
     var currentScrollPos = window.pageYOffset;
