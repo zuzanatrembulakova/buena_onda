@@ -11,7 +11,7 @@
 <body>
     <div class="header_wrapper">
         <header>
-            <div class="nav_icon"></div>
+            <div class="logo"></div>
             <h1>Buena Onda<br>Style Tile</h1>
         </header>
     </div>
@@ -49,41 +49,39 @@
 
             </section>
 
-             <section class="buttons">
+            <section class="buttons">
                 <h3 class="section_heading">Buttons & Icons</h3>
                 <div class="buttons_wrapper">
                     <div class="btn"><span>button</span></div>
-                    <div id="topBtn"><img class="topBtn" src="../icons/logo.svg" alt="top"></div>
+                     <button id="topBtn"><img src="../icons/logo.svg" alt="top"></button>
                     <div class="scroll_down_btn">
 
-             <img src="../icons/arrow-up-03.svg" alt="up" class="arrow_up" onclick="moveSceneUp()">
-            <!--<img src="icons/scroll-01.svg" class="btn_body">-->
+                        <img src="../icons/arrow-up-03.svg" alt="up" class="arrow_up" onclick="moveSceneUp()">
+                        <svg id="mouse" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 326">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: #3993fa;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 16px;
+                                    }
 
-            <svg id="mouse" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 326">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: none;
-                            stroke: #3993fa;
-                            stroke-miterlimit: 10;
-                            stroke-width: 16px;
-                        }
-
-                        .cls-2 {
-                            fill: #3993fa;
-                        }
-
-                    </style>
-                </defs>
-                <rect class="cls-1" x="16.5" y="12.51" width="189" height="302" rx="94.5" />
-                <circle class="cls-2 circle" cx="111" cy="81.5" r="19.5" />
-            </svg>
-
-            <img src="../icons/arrow-02.svg" alt="down" class="arrow_down" onclick="moveSceneDown()">
-        </div>
+                                    .cls-2 {
+                                        fill: #3993fa;
+                                    }
+                                </style>
+                            </defs>
+                            <rect class="cls-1" x="16.5" y="12.51" width="189" height="302" rx="94.5" />
+                            <circle class="cls-2 circle" cx="111" cy="81.5" r="19.5" />
+                        </svg>
+                        <img src="../icons/arrow-02.svg" alt="down" class="arrow_down" onclick="moveSceneDown()">
+                    </div>
 
                     <p class="font_details btn_text">Button<br> example</p>
                     <p class="font_details topBtn_text">Back to <br>top button</p>
+
+                    <p class="font_details scrollBtn_text">Scroll<br> button</p>
 
                 </div>
             </section>
@@ -144,13 +142,5 @@
         </div>
 
     </main>
-
-    <div class="full_width">
-        <footer>
-            <p></p>
-        </footer>
-    </div>
-
-    <script href="style-tile-script.js"></script>
 
 </body></html>

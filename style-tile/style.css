@@ -90,20 +90,28 @@ header, .swatches_wrapper, .adjectives_wrapper{
 .buttons_wrapper{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 220px .3fr;
+    grid-template-columns: 220px .3fr .3fr;
     grid-gap: 5px;
     justify-items: center;
+    align-items: center;
     text-align: center;
 }
 
-#topBtn > img{
+#topBtn {
     width: 50px;
     height: 50px;
-    transform: rotate(-90deg);
+
+    border: none;
+    outline: none;
+    background-color: transparent;
     cursor: pointer;
+    font-size: 18px;
+    margin: 30px 0px;
+    transform: rotate(-90deg);
+    transition: .5s;
 }
 
-.topBtn:hover {
+#topBtn:hover {
     transform: rotate(30deg);
 }
 
@@ -146,13 +154,50 @@ header, .swatches_wrapper, .adjectives_wrapper{
     right: 0;
 }
 
-.nav_icon {
-    background-image: url(../../icons/logo-01.svg);
+.circle {
+    animation: scroll 2s ease-out 5;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(1.5em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+.scroll_down_btn{
+    display: flex;
+    flex-direction: column;
+}
+.scroll_down_btn img,
+svg {
+    width: 30px;
+    margin: 5px;
+}
+
+.arrow_up,
+.arrow_down {
+    cursor: pointer;
+}
+
+.logo {
+    background-image: url(../icons/logo-01.svg);
     width: 70px;
     height: 70px;
     padding: 5px;
     transition: .5s ease;
-    cursor: pointer;
 }
 .icon_in {
     animation: movein .2s linear;
@@ -272,5 +317,9 @@ header, .swatches_wrapper, .adjectives_wrapper{
     }
     .topBtn_text{
         grid-row: 4;
+    }
+
+    .pattern_wrapper > img{
+        margin: 10px 0;
     }
 }
