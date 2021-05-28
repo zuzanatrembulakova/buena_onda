@@ -61,10 +61,6 @@ section a:hover {
     margin-top: 150px;
 }
 
-.ignoremouse {
-    pointer-events: none;
-}
-
 /*BACK TO TOP BTN | BTN STYLE | LOGO*/
 #topBtn {
     position: fixed;
@@ -84,7 +80,6 @@ section a:hover {
     display: none;
     transition: .5s;
 }
-
 #topBtn:hover {
     transform: rotate(30deg);
 }
@@ -106,15 +101,12 @@ section a:hover {
     color: #3993FA;
     font-weight: 400;
 }
-
 .btn_white {
     border-color: #fff;
 }
-
 .btn_white a {
     color: #fff;
 }
-
 .btn span {
     cursor: pointer;
     display: inline-block;
@@ -187,12 +179,8 @@ section a:hover {
     text-decoration: none;
     font-size: 18px;
 }
-.active {
-    background-color: #04AA6D;
-    color: #000;
-}
 
-.dropdown .dropbtn, .dropdown_content a, .dropdown2lvl .dropbtn2lvl {
+.dropdown .dropbtn, .dropdown_content a {
     font-size: 17px;
     border: none;
     outline: none;
@@ -212,13 +200,6 @@ section a:hover {
     z-index: 1000;
 }
 
-.dropdown_content2lvl {
-    display: none;
-    background-color: #fff;
-    min-width: 160px;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-    z-index: 10000;
-}
 .dropdown_content a{
     float: none;
     text-align: left;
@@ -247,11 +228,7 @@ section a:hover {
     cursor: pointer;
 }
 
-.dropdown_content a.secondlvl {
-    display:none;
-}
-
-.dropdown:hover .dropdown_content, .dropdown2lvl:hover .dropdown_content2lvl, .products:hover .secondlvl{
+.dropdown:hover .dropdown_content{
     display: block;
     animation: showDropDownContent .3s ease-out;
 }
@@ -293,15 +270,6 @@ section a:hover {
     z-index: 10;
     transition: top 0.3s;
 }
-
-/*.ig {
-    margin-left: 20px;
-    background-image: url("../icons/instagram-03.svg");
-    background-size: contain;
-    height: 4vh;
-    background-repeat: no-repeat;
-    z-index: 10;
-}*/
 
 /*FOOTER*/
 footer {
@@ -533,7 +501,6 @@ footer a {
         text-align: center;
     }
 }
-
 @media screen and (max-width: 690px){
 
     footer {
@@ -565,7 +532,6 @@ footer a {
     }
 
 }
-
 @media screen and (max-width: 380px){
     footer{
         width: 100%;

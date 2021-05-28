@@ -109,14 +109,12 @@ article h3 {
         width: 90%;
     }
 }
-
 @media screen and (max-width: 690px){
 
     .explainer{
         width: 90%;
     }
 }
-
 @media screen and (max-width: 520px){
 
     article h1 {

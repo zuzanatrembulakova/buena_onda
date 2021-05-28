@@ -34,23 +34,18 @@ body {
 .mountain_back {
     background-image: url(../images/home-sea/mountain-back-01.svg);
 }
-
 .mountain_front {
     background-image: url(../images/home-sea/mountain_front-01.svg);
 }
-
 .palms_back {
     background-image: url(../images/home-sea/palms_back-01.svg);
 }
-
 .palms_front {
     background-image: url(../images/home-sea/palms_front-01.svg);
 }
-
 .beach {
     background-image: url(../images/home-sea/beach2-01.svg);
 }
-
 .sea_back {
     background-image: url(../images/home-sea/sea-back-01.svg);
 }
@@ -60,7 +55,6 @@ body {
 .circle {
     animation: scroll 2s ease-out 5;
 }
-
 @keyframes scroll {
     0% {
         transform: translateY(0);
@@ -94,8 +88,7 @@ body {
     outline: none;
 }
 
-.scroll_down_btn img,
-svg {
+.scroll_down_btn img, svg {
     width: 30px;
     margin: 5px;
 }
@@ -104,10 +97,6 @@ svg {
 .arrow_down {
     cursor: pointer;
 }
-
-/*.arrow_up {
-    transform: rotate(180deg);
-}*/
 
 .product_wrapper {
     position: absolute;
@@ -133,30 +122,12 @@ svg {
     filter: brightness(1.08) drop-shadow(5px 5px #3993fa);
 }
 
-/*.move_image_animation {
-    animation: img-animate 0.75s ease alternate;
-}
-@keyframes img-animate {
-    0% {
-        transform: scale(1, 1);
-    }
-
-    20% {
-        transform: scale(0.95, 0.97);
-    }
-
-    100% {
-        transform: scale(1, 1);
-    }
-}*/
-
 @media screen and (max-width: 1025px) {
     .product_img {
         width: 350px;
         height: auto;
     }
 }
-
 @media screen and (max-width: 690px) {
     body {
         overflow: hidden;

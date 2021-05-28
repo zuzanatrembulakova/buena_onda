@@ -6,8 +6,6 @@ const viewport_width = window.innerWidth || document.documentElement.clientWidth
 
 var documentUrl = document.URL;
 
-console.log(documentUrl);
-
 window.onscroll = function () {
     if (viewport_width > 1020) {
         stickybar(documentUrl.includes("index.html"));

@@ -9,7 +9,6 @@ fetch("https://www.rasbery.eu/buena--onda/wp-json/wp/v2/image?per_page=100")
 
 
 function handleGalleryData(jsonData) {
-    /*jsonData.reverse();*/
     jsonData.forEach(showGallery);
 }
 
@@ -27,29 +26,6 @@ function showGallery(oneImg) {
 
     document.querySelector("main").appendChild(clone);
 }
-
-
-/*fetch("https://rasbery.eu/buena--onda/wp-json/wp/v2/categories")
-    .then(function (response) {
-        return response.json()
-    })
-    .then(function (data) {
-        handleFrameData(data)
-    })
-
-
-function handleFrameData(jsonData) {
-    jsonData.reverse();
-    jsonData.forEach(showFrames);
-}
-
-function showFrames(oneFrame) {
-    const category = oneFrame.name;
-    console.log(category)
-    if (category=="frame"){
-        document.querySelector("img").classList.add = "frame";
-    }
-}*/
 
 
 

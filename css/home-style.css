@@ -57,7 +57,6 @@ body{
 
     animation: bounce 1.5s infinite;
 }
-
 .intro_wrapper::before {
     z-index: -2;
     content: '';
@@ -70,7 +69,6 @@ body{
     left: 50%;
     transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
 }
-
 @keyframes bounce {
     50% {
         transform: translate(-50%, -42%);
@@ -94,17 +92,14 @@ body{
     top: 0;
     z-index: -10;
 }
-
 .white_waves {
     background-image: url(../images/home-sea/white_waves-01.svg);
     height: 929px;
 }
-
 .sea_front {
     background-image: url(../images/home-sea/sea_front-01.svg);
     height: 929px;
 }
-
 .sea_wave {
     width: 100%;
     height: 700px;
@@ -120,25 +115,12 @@ body{
     margin-top: -20px;
 }
 
-
-.three_icons_title {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 .under_sea h2 {
     color: #fff;
 }
-
 .under_sea p {
     color: #fff;
 }
-
-/*.summerxslowfashion {
-    display: flex;
-    flex-flow: column;
-}*/
 
 .products {
     display: grid;
@@ -170,7 +152,6 @@ body{
     filter: drop-shadow(5px 5px #fff);
 }
 
-
 .three_icons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -180,72 +161,25 @@ body{
     width: 80%;
     margin: 0px auto 100px auto;
 }
-
+.three_icons_title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
 .three_icons div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .three_icons div p {
     text-align: center;
     color: #ffffff;
     font-size: 16px;
-    /*letter-spacing: 2px;*/
     width: 80%;
 }
-
 .three_icons img {
     width: 200px;
 }
-
-/*.bubbles_wrapper {
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-.bubbles {
-    width: 200px;
-    margin-right: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.bubbles img {
-    width: 70px;
-    opacity: 0;
-    animation: bubbleAnim 7s linear infinite;
-}
-.bubbles img:nth-child(1) {
-    width: 30px;
-    animation-delay: 2.3s;
-}
-.bubbles img:nth-child(2) {
-    width: 50px;
-    animation-delay: 4.6s;
-}
-@keyframes bubbleAnim {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    70% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-80vh);
-        opacity: 0;
-    }
-}*/
 
 @media screen and (max-width: 1300px) {
     .sea_front {
@@ -260,7 +194,6 @@ body{
         margin: -130px 0 0 0;
     }
 }
-
 @media screen and (max-width: 1020px) {
     #bg_video {
         width: auto;
@@ -288,7 +221,6 @@ body{
     }
 
 }
-
 @media screen and (max-width: 690px) {
     .intro_wrapper {
         width: 90%;

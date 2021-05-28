@@ -16,7 +16,6 @@ h1 {
     font-family: 'Century Gothic', sans-serif;
 }
 
-
 main > section {
     text-align: center;
     margin: auto;
@@ -103,7 +102,6 @@ iframe {
         margin-bottom: 40px;
     }
 }
-
 @media screen and (max-width: 690px) {
 
     iframe {
@@ -120,7 +118,6 @@ iframe {
         width: 80%;
     }
 }
-
 @media screen and (max-width: 380px) {
 
     h1 {
