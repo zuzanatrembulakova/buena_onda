@@ -35,13 +35,14 @@ body{
     width: 100%;
     min-height: 100%;
     z-index: -100;
+    border: none;
 }
 
 .intro_wrapper {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -45%);
 
     display: flex;
     flex-direction: column;
@@ -85,24 +86,22 @@ body{
 .white_waves,
 .sea_front {
     width: 100%;
-    height: 700px;
+    height: 929px;
     background-size: cover;
     position: fixed;
-    margin: 10px 0 0 0;
+    margin: 50px 0 0 0;
     top: 0;
     z-index: -10;
 }
 .white_waves {
     background-image: url(../images/home-sea/white_waves-01.svg);
-    height: 929px;
 }
 .sea_front {
     background-image: url(../images/home-sea/sea_front-01.svg);
-    height: 929px;
 }
 .sea_wave {
     width: 100%;
-    height: 700px;
+    height: 750px;
     background-size: cover;
     margin: -20px 0 0 0;
     background-image: url(../images/home-sea/sea_wave-01.svg);
@@ -182,6 +181,10 @@ body{
 }
 
 @media screen and (max-width: 1300px) {
+    .main_sticky_home{
+        margin-top: 50px;
+    }
+
     .sea_front {
         margin: -50px 0 0 0;
     }
@@ -194,7 +197,15 @@ body{
         margin: -130px 0 0 0;
     }
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1025px) {
+    .main_sticky_home{
+        margin-top: 0px;
+    }
+
+    .sea_wave {
+        margin: -170px 0 0 0;
+    }
+
     #bg_video {
         width: auto;
         height: auto;

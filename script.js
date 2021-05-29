@@ -7,9 +7,9 @@ const viewport_width = window.innerWidth || document.documentElement.clientWidth
 var documentUrl = document.URL;
 
 window.onscroll = function () {
-    if (viewport_width > 1020) {
-        stickybar(documentUrl.includes("index.html"));
-    }
+
+    stickybar(documentUrl.includes("index.html"));
+
 
     if (document.getElementById("topBtn")) {
         scrollFunction();
@@ -48,14 +48,6 @@ var prevScrollpos = window.pageYOffset;
 /*-------STICKY NAVBAR-----------------------------*/
 
 function stickybar() {
-
-    navbar.classList.add("sticky");
-
-    if (documentUrl.includes("index.html")) {
-        document.getElementsByTagName("main")[0].classList.add("main_sticky_home");
-    } else {
-        document.getElementsByTagName("main")[0].classList.add("main_sticky");
-    }
 
     var currentScrollPos = window.pageYOffset;
 
