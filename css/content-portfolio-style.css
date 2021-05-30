@@ -31,8 +31,17 @@ section > h2 {
     margin: 20px auto 50px auto;
 }
 
-.promotional_videos, .short_videos video:last-child {
+.promotional_videos {
     margin-bottom: 70px;
+}
+
+.short_videos video:last-child {
+    margin-bottom: 50px;
+}
+
+.product_photography ul {
+    list-style-type: none;
+    margin-bottom: 60px;
 }
 
 .promotional_videos,
@@ -87,11 +96,15 @@ iframe {
 
 .explainer,
 .cinemagraphs > video,
-.logo_animations > video {
+.logo_animations > video{
     width: 500px;
     display: block;
     margin: 0 auto 50px auto;
-    filter: drop-shadow(5px 5px #3993fa);
+     filter: drop-shadow(5px 5px #3993fa);
+}
+
+.short_videos > video {
+    filter: drop-shadow(5px 5px #9cffcf);
 }
 
 .explainer {
