@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@font-face {
+	font-family: 'gothic';
+	src: url('./gothic.eot');
+	src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
+}
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Century Gothic', sans-serif;
+    font-family: 'gothic';
 }
 
 * {

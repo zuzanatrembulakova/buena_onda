@@ -59,6 +59,10 @@ section > h2 {
     grid-gap: 50px;
 }
 
+.short_videos h2 {
+    margin-bottom: 0;
+}
+
 .promotional_videos h2,
 .cinemagraphs h2,
 .logo_animations h2, .short_videos h2 {
