@@ -19,7 +19,6 @@ function showGallery(oneImg) {
     const clone = template.cloneNode(true);
     const category = oneImg.categories.length;
     clone.querySelector("img").src = oneImg.image.guid;
-    console.log(category);
     if (category=="2"){
         clone.querySelector("img").classList.add("frame");
     }
